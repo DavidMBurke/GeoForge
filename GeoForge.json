@@ -66,7 +66,7 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_25.png",
+        "file": "assets/Robot_Run_33.png",
         "kind": "image",
         "metadata": "",
         "name": "d125f07a9dc2488742e35328d9c42f672c5eb3aa6e8b289974baa4b2e413c2ce_Robot_Run_1.png",
@@ -79,7 +79,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_26.png",
+        "file": "assets/Robot_Run_34.png",
         "kind": "image",
         "metadata": "",
         "name": "085f35ebe6089b847180e2f37c492d5a7a4854f0c1d56be06d2b5c5d011782f6_Robot_Run_2.png",
@@ -92,7 +92,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_27.png",
+        "file": "assets/Robot_Run_35.png",
         "kind": "image",
         "metadata": "",
         "name": "c184c1f5f0b168ae712bdc17777f859862a13f3271c7c4f34acf5fe619b72f12_Robot_Run_3.png",
@@ -105,7 +105,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_28.png",
+        "file": "assets/Robot_Run_36.png",
         "kind": "image",
         "metadata": "",
         "name": "f95cfa4187299f8de65895910a485d893ffa336e99359646261a04b720d22233_Robot_Run_4.png",
@@ -118,7 +118,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_29.png",
+        "file": "assets/Robot_Run_37.png",
         "kind": "image",
         "metadata": "",
         "name": "192d908f0e501408dd2107bed0fec0ea462feaa5ec564580d2f184741feecca8_Robot_Run_5.png",
@@ -131,7 +131,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_30.png",
+        "file": "assets/Robot_Run_38.png",
         "kind": "image",
         "metadata": "",
         "name": "fdea0bea87b5e2e097f6137128bd4154d7f0e85f85a69f6d9f3ce4e2ca4982ad_Robot_Run_6.png",
@@ -144,7 +144,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_31.png",
+        "file": "assets/Robot_Run_39.png",
         "kind": "image",
         "metadata": "",
         "name": "df58d910b703e7524fb6f8b6035539e58f781835919ffc58bdd37bf7480c655f_Robot_Run_7.png",
@@ -157,7 +157,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Run_32.png",
+        "file": "assets/Robot_Run_40.png",
         "kind": "image",
         "metadata": "",
         "name": "ed780e156c6caa5e71a69d976846ed3ccaa17d5ba99dbe1df396cdb6cac3543b_Robot_Run_8.png",
@@ -170,7 +170,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_31.png",
+        "file": "assets/Robot_Idle_41.png",
         "kind": "image",
         "metadata": "",
         "name": "21c1373338ab3ddeaecc3af196b4e9e0304c977585e40ad3d1ea4c219c94d495_Robot_Idle_1.png",
@@ -183,7 +183,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_31.png",
+        "file": "assets/Robot_Jump_41.png",
         "kind": "image",
         "metadata": "",
         "name": "4360d30035c6c1a56741489c6ce1579418fc4c1af9dd2dd91efc186958f35b0e_Robot_Jump_1.png",
@@ -196,7 +196,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_32.png",
+        "file": "assets/Robot_Jump_42.png",
         "kind": "image",
         "metadata": "",
         "name": "49803566a6d847d7d40f93aab35edde33ffa55ba8113d919e3b638c044ecd161_Robot_Jump_10.png",
@@ -209,7 +209,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_33.png",
+        "file": "assets/Robot_Jump_43.png",
         "kind": "image",
         "metadata": "",
         "name": "101613b8dde054f1a0e570094ce5b7d7d192dc7419dd94e5ed10f46994d8c5c5_Robot_Jump_2.png",
@@ -222,7 +222,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_34.png",
+        "file": "assets/Robot_Jump_44.png",
         "kind": "image",
         "metadata": "",
         "name": "91f7af3b8d64617711392d19f25b808579bae21b3dd07c4318da51604632b96b_Robot_Jump_3.png",
@@ -235,7 +235,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_35.png",
+        "file": "assets/Robot_Jump_45.png",
         "kind": "image",
         "metadata": "",
         "name": "516a5aabd15d7a172982496fdbba925ced0a563c7c1a12819c77470d94f795e9_Robot_Jump_4.png",
@@ -248,7 +248,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_36.png",
+        "file": "assets/Robot_Jump_46.png",
         "kind": "image",
         "metadata": "",
         "name": "73312b7820d026006f5b5568ab589a24db2685648eb297ff41c58c39ee73ef21_Robot_Jump_5.png",
@@ -261,7 +261,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_37.png",
+        "file": "assets/Robot_Jump_47.png",
         "kind": "image",
         "metadata": "",
         "name": "c71028ddd54aa1cad889129179921c12037cf2d58d0c7576d9c3bab14967f8ea_Robot_Jump_6.png",
@@ -274,7 +274,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_38.png",
+        "file": "assets/Robot_Jump_48.png",
         "kind": "image",
         "metadata": "",
         "name": "5159ae1356eee7cce8af49a317676019d464e6d93cfde061198548b1854b83ec_Robot_Jump_7.png",
@@ -287,7 +287,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_39.png",
+        "file": "assets/Robot_Jump_49.png",
         "kind": "image",
         "metadata": "",
         "name": "14b4c07c9b56c8038f466db13a504964ce0ca5e27b1795c307d81b218dce3210_Robot_Jump_8.png",
@@ -300,7 +300,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Jump_40.png",
+        "file": "assets/Robot_Jump_50.png",
         "kind": "image",
         "metadata": "",
         "name": "b8e78c1965c1dfe02c154436027b67a53d7c82a2289eac07729fb5cf1d2cdd53_Robot_Jump_9.png",
@@ -313,7 +313,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_32.png",
+        "file": "assets/Robot_Idle_42.png",
         "kind": "image",
         "metadata": "",
         "name": "177add60f730474161c24279735aa07e56e9cee581e970261f5de592be42ff6f_Robot_Idle_2.png",
@@ -326,7 +326,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_33.png",
+        "file": "assets/Robot_Idle_43.png",
         "kind": "image",
         "metadata": "",
         "name": "5f78261541a0e09754ba251e822b5c71fb44e04cc0986836ac5c8e54c9078279_Robot_Idle_3.png",
@@ -339,7 +339,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_34.png",
+        "file": "assets/Robot_Idle_44.png",
         "kind": "image",
         "metadata": "",
         "name": "072ab436b53a8203611099dc51f70111da4c207224bc24127e65756183a3402a_Robot_Idle_4.png",
@@ -352,7 +352,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_35.png",
+        "file": "assets/Robot_Idle_45.png",
         "kind": "image",
         "metadata": "",
         "name": "b3f0e7dfaa8f3b79e386e79dd60b01add977f5248cbba4478497a71932ecd095_Robot_Idle_5.png",
@@ -365,7 +365,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_36.png",
+        "file": "assets/Robot_Idle_46.png",
         "kind": "image",
         "metadata": "",
         "name": "572da0474d5d37305df784c12ea7eef39c447d9b99d2572183d54a1cacad6a4e_Robot_Idle_6.png",
@@ -378,7 +378,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_37.png",
+        "file": "assets/Robot_Idle_47.png",
         "kind": "image",
         "metadata": "",
         "name": "c7f85217413d62750da20a789b43a9c428f0a81c2e631bca6c56d90aa610cb14_Robot_Idle_7.png",
@@ -391,7 +391,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_38.png",
+        "file": "assets/Robot_Idle_48.png",
         "kind": "image",
         "metadata": "",
         "name": "8f6e701bc46523b29c4b5ead058941bcf1b4395ef0a0f2d2f474a60c57308627_Robot_Idle_8.png",
@@ -404,7 +404,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_39.png",
+        "file": "assets/Robot_Idle_49.png",
         "kind": "image",
         "metadata": "",
         "name": "bfe00e22c17b64cd09ce49632353eb908c5f8e93aeb7f05a59e156684914095c_Robot_Idle_9.png",
@@ -417,7 +417,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Robot_Idle_40.png",
+        "file": "assets/Robot_Idle_50.png",
         "kind": "image",
         "metadata": "",
         "name": "e80052bcdbfffd1d3ed6216ec3e451c590155bfd4c7fb0c0acc196e72be56f8c_Robot_Idle_10.png",
@@ -430,7 +430,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/dirt5.png",
+        "file": "assets/dirt2.png",
         "kind": "image",
         "metadata": "",
         "name": "dirt.png",
@@ -443,7 +443,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/basalt5.png",
+        "file": "assets/basalt2.png",
         "kind": "image",
         "metadata": "",
         "name": "basalt.png",
@@ -453,24 +453,6 @@
           "identifier": "https://project-resources.gdevelop.io/41019fb6-3f62-4f3b-b6ea-c2cd537b6206/resources/35de0ef1a3a4a9d7f8151f0a4634bb3edc8c3dd9d06cb7d08cab8e24acb951c7-basalt.png",
           "name": "cloud-project-resource"
         }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/dirt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\dirt.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/basalt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\basalt.png",
-        "smoothed": true,
-        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -6062,11 +6044,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.01,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\dirt.png",
+                      "image": "dirt.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6143,11 +6125,11 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.01,
+                  "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\basalt.png",
+                      "image": "basalt.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",

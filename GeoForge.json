@@ -1,0 +1,476 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "e8d6b40d-38bc-459b-8a75-130e0d3d4e56",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Envirominers",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/d125f07a9dc2488742e35328d9c42f672c5eb3aa6e8b289974baa4b2e413c2ce_Robot_Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "d125f07a9dc2488742e35328d9c42f672c5eb3aa6e8b289974baa4b2e413c2ce_Robot_Run_1.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/d125f07a9dc2488742e35328d9c42f672c5eb3aa6e8b289974baa4b2e413c2ce_Robot_Run_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/085f35ebe6089b847180e2f37c492d5a7a4854f0c1d56be06d2b5c5d011782f6_Robot_Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "085f35ebe6089b847180e2f37c492d5a7a4854f0c1d56be06d2b5c5d011782f6_Robot_Run_2.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/085f35ebe6089b847180e2f37c492d5a7a4854f0c1d56be06d2b5c5d011782f6_Robot_Run_2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/c184c1f5f0b168ae712bdc17777f859862a13f3271c7c4f34acf5fe619b72f12_Robot_Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "c184c1f5f0b168ae712bdc17777f859862a13f3271c7c4f34acf5fe619b72f12_Robot_Run_3.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/c184c1f5f0b168ae712bdc17777f859862a13f3271c7c4f34acf5fe619b72f12_Robot_Run_3.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/f95cfa4187299f8de65895910a485d893ffa336e99359646261a04b720d22233_Robot_Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "f95cfa4187299f8de65895910a485d893ffa336e99359646261a04b720d22233_Robot_Run_4.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/f95cfa4187299f8de65895910a485d893ffa336e99359646261a04b720d22233_Robot_Run_4.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/192d908f0e501408dd2107bed0fec0ea462feaa5ec564580d2f184741feecca8_Robot_Run_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "192d908f0e501408dd2107bed0fec0ea462feaa5ec564580d2f184741feecca8_Robot_Run_5.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/192d908f0e501408dd2107bed0fec0ea462feaa5ec564580d2f184741feecca8_Robot_Run_5.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/fdea0bea87b5e2e097f6137128bd4154d7f0e85f85a69f6d9f3ce4e2ca4982ad_Robot_Run_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "fdea0bea87b5e2e097f6137128bd4154d7f0e85f85a69f6d9f3ce4e2ca4982ad_Robot_Run_6.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/fdea0bea87b5e2e097f6137128bd4154d7f0e85f85a69f6d9f3ce4e2ca4982ad_Robot_Run_6.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/df58d910b703e7524fb6f8b6035539e58f781835919ffc58bdd37bf7480c655f_Robot_Run_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "df58d910b703e7524fb6f8b6035539e58f781835919ffc58bdd37bf7480c655f_Robot_Run_7.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/df58d910b703e7524fb6f8b6035539e58f781835919ffc58bdd37bf7480c655f_Robot_Run_7.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/ed780e156c6caa5e71a69d976846ed3ccaa17d5ba99dbe1df396cdb6cac3543b_Robot_Run_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ed780e156c6caa5e71a69d976846ed3ccaa17d5ba99dbe1df396cdb6cac3543b_Robot_Run_8.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/ed780e156c6caa5e71a69d976846ed3ccaa17d5ba99dbe1df396cdb6cac3543b_Robot_Run_8.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/21c1373338ab3ddeaecc3af196b4e9e0304c977585e40ad3d1ea4c219c94d495_Robot_Idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "21c1373338ab3ddeaecc3af196b4e9e0304c977585e40ad3d1ea4c219c94d495_Robot_Idle_1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/21c1373338ab3ddeaecc3af196b4e9e0304c977585e40ad3d1ea4c219c94d495_Robot_Idle_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/4360d30035c6c1a56741489c6ce1579418fc4c1af9dd2dd91efc186958f35b0e_Robot_Jump_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "4360d30035c6c1a56741489c6ce1579418fc4c1af9dd2dd91efc186958f35b0e_Robot_Jump_1.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/4360d30035c6c1a56741489c6ce1579418fc4c1af9dd2dd91efc186958f35b0e_Robot_Jump_1.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/49803566a6d847d7d40f93aab35edde33ffa55ba8113d919e3b638c044ecd161_Robot_Jump_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "49803566a6d847d7d40f93aab35edde33ffa55ba8113d919e3b638c044ecd161_Robot_Jump_10.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/49803566a6d847d7d40f93aab35edde33ffa55ba8113d919e3b638c044ecd161_Robot_Jump_10.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/101613b8dde054f1a0e570094ce5b7d7d192dc7419dd94e5ed10f46994d8c5c5_Robot_Jump_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "101613b8dde054f1a0e570094ce5b7d7d192dc7419dd94e5ed10f46994d8c5c5_Robot_Jump_2.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/101613b8dde054f1a0e570094ce5b7d7d192dc7419dd94e5ed10f46994d8c5c5_Robot_Jump_2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/91f7af3b8d64617711392d19f25b808579bae21b3dd07c4318da51604632b96b_Robot_Jump_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "91f7af3b8d64617711392d19f25b808579bae21b3dd07c4318da51604632b96b_Robot_Jump_3.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/91f7af3b8d64617711392d19f25b808579bae21b3dd07c4318da51604632b96b_Robot_Jump_3.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/516a5aabd15d7a172982496fdbba925ced0a563c7c1a12819c77470d94f795e9_Robot_Jump_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "516a5aabd15d7a172982496fdbba925ced0a563c7c1a12819c77470d94f795e9_Robot_Jump_4.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/516a5aabd15d7a172982496fdbba925ced0a563c7c1a12819c77470d94f795e9_Robot_Jump_4.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/73312b7820d026006f5b5568ab589a24db2685648eb297ff41c58c39ee73ef21_Robot_Jump_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "73312b7820d026006f5b5568ab589a24db2685648eb297ff41c58c39ee73ef21_Robot_Jump_5.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/73312b7820d026006f5b5568ab589a24db2685648eb297ff41c58c39ee73ef21_Robot_Jump_5.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/c71028ddd54aa1cad889129179921c12037cf2d58d0c7576d9c3bab14967f8ea_Robot_Jump_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "c71028ddd54aa1cad889129179921c12037cf2d58d0c7576d9c3bab14967f8ea_Robot_Jump_6.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/c71028ddd54aa1cad889129179921c12037cf2d58d0c7576d9c3bab14967f8ea_Robot_Jump_6.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/5159ae1356eee7cce8af49a317676019d464e6d93cfde061198548b1854b83ec_Robot_Jump_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "5159ae1356eee7cce8af49a317676019d464e6d93cfde061198548b1854b83ec_Robot_Jump_7.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/5159ae1356eee7cce8af49a317676019d464e6d93cfde061198548b1854b83ec_Robot_Jump_7.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/14b4c07c9b56c8038f466db13a504964ce0ca5e27b1795c307d81b218dce3210_Robot_Jump_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "14b4c07c9b56c8038f466db13a504964ce0ca5e27b1795c307d81b218dce3210_Robot_Jump_8.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/14b4c07c9b56c8038f466db13a504964ce0ca5e27b1795c307d81b218dce3210_Robot_Jump_8.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/b8e78c1965c1dfe02c154436027b67a53d7c82a2289eac07729fb5cf1d2cdd53_Robot_Jump_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "b8e78c1965c1dfe02c154436027b67a53d7c82a2289eac07729fb5cf1d2cdd53_Robot_Jump_9.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/b8e78c1965c1dfe02c154436027b67a53d7c82a2289eac07729fb5cf1d2cdd53_Robot_Jump_9.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/177add60f730474161c24279735aa07e56e9cee581e970261f5de592be42ff6f_Robot_Idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "177add60f730474161c24279735aa07e56e9cee581e970261f5de592be42ff6f_Robot_Idle_2.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/177add60f730474161c24279735aa07e56e9cee581e970261f5de592be42ff6f_Robot_Idle_2.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/5f78261541a0e09754ba251e822b5c71fb44e04cc0986836ac5c8e54c9078279_Robot_Idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "5f78261541a0e09754ba251e822b5c71fb44e04cc0986836ac5c8e54c9078279_Robot_Idle_3.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/5f78261541a0e09754ba251e822b5c71fb44e04cc0986836ac5c8e54c9078279_Robot_Idle_3.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/072ab436b53a8203611099dc51f70111da4c207224bc24127e65756183a3402a_Robot_Idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "072ab436b53a8203611099dc51f70111da4c207224bc24127e65756183a3402a_Robot_Idle_4.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/072ab436b53a8203611099dc51f70111da4c207224bc24127e65756183a3402a_Robot_Idle_4.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/b3f0e7dfaa8f3b79e386e79dd60b01add977f5248cbba4478497a71932ecd095_Robot_Idle_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "b3f0e7dfaa8f3b79e386e79dd60b01add977f5248cbba4478497a71932ecd095_Robot_Idle_5.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/b3f0e7dfaa8f3b79e386e79dd60b01add977f5248cbba4478497a71932ecd095_Robot_Idle_5.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/572da0474d5d37305df784c12ea7eef39c447d9b99d2572183d54a1cacad6a4e_Robot_Idle_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "572da0474d5d37305df784c12ea7eef39c447d9b99d2572183d54a1cacad6a4e_Robot_Idle_6.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/572da0474d5d37305df784c12ea7eef39c447d9b99d2572183d54a1cacad6a4e_Robot_Idle_6.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/c7f85217413d62750da20a789b43a9c428f0a81c2e631bca6c56d90aa610cb14_Robot_Idle_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "c7f85217413d62750da20a789b43a9c428f0a81c2e631bca6c56d90aa610cb14_Robot_Idle_7.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/c7f85217413d62750da20a789b43a9c428f0a81c2e631bca6c56d90aa610cb14_Robot_Idle_7.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/8f6e701bc46523b29c4b5ead058941bcf1b4395ef0a0f2d2f474a60c57308627_Robot_Idle_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "8f6e701bc46523b29c4b5ead058941bcf1b4395ef0a0f2d2f474a60c57308627_Robot_Idle_8.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/8f6e701bc46523b29c4b5ead058941bcf1b4395ef0a0f2d2f474a60c57308627_Robot_Idle_8.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/bfe00e22c17b64cd09ce49632353eb908c5f8e93aeb7f05a59e156684914095c_Robot_Idle_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "bfe00e22c17b64cd09ce49632353eb908c5f8e93aeb7f05a59e156684914095c_Robot_Idle_9.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/bfe00e22c17b64cd09ce49632353eb908c5f8e93aeb7f05a59e156684914095c_Robot_Idle_9.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/e80052bcdbfffd1d3ed6216ec3e451c590155bfd4c7fb0c0acc196e72be56f8c_Robot_Idle_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "e80052bcdbfffd1d3ed6216ec3e451c590155bfd4c7fb0c0acc196e72be56f8c_Robot_Idle_10.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Characters/Robot/e80052bcdbfffd1d3ed6216ec3e451c590155bfd4c7fb0c0acc196e72be56f8c_Robot_Idle_10.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://project-resources.gdevelop.io/41019fb6-3f62-4f3b-b6ea-c2cd537b6206/resources/73502e35d7415cde0b152f79ee9de9cbe172c0493861c0e333be17bf6801dee9-dirt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "dirt.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/41019fb6-3f62-4f3b-b6ea-c2cd537b6206/resources/73502e35d7415cde0b152f79ee9de9cbe172c0493861c0e333be17bf6801dee9-dirt.png",
+          "name": "cloud-project-resource"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "https://project-resources.gdevelop.io/41019fb6-3f62-4f3b-b6ea-c2cd537b6206/resources/35de0ef1a3a4a9d7f8151f0a4634bb3edc8c3dd9d06cb7d08cab8e24acb951c7-basalt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "basalt.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://project-resources.gdevelop.io/41019fb6-3f62-4f3b-b6ea-c2cd537b6206/resources/35de0ef1a3a4a9d7f8151f0a4634bb3edc8c3dd9d06cb7d08cab8e24acb951c7-basalt.png",
+          "name": "cloud-project-resource"
+        }
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/untitled-scene"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}

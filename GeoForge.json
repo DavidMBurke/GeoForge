@@ -551,6 +551,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Hud/Bar/ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar.png",
           "name": "Health Bar.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Background Blue Desert.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "4061d30b08d7e7d2e43fa157912a6f4dfd3368e37f1eccf5fd17f99b3dccc6f8_tiled_Background Blue Desert.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Breakable Physics/Background/4061d30b08d7e7d2e43fa157912a6f4dfd3368e37f1eccf5fd17f99b3dccc6f8_tiled_Background Blue Desert.png",
+          "name": "gdevelop-asset-store"
+        }
       }
     ],
     "resourceFolders": []
@@ -582,7 +595,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7876290101673771,
+        "zoomFactor": 0.5468750000000014,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -598,7 +611,7 @@
           "persistentUuid": "245ec58a-d634-4ba6-a54f-23eb5aaac502",
           "width": 64,
           "x": 608,
-          "y": 224,
+          "y": 288,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -5155,6 +5168,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 512,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "Background",
+          "persistentUuid": "25f144a7-52ca-436b-a92d-537e77e54653",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6943,6 +6973,17 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "Background",
+          "texture": "4061d30b08d7e7d2e43fa157912a6f4dfd3368e37f1eccf5fd17f99b3dccc6f8_tiled_Background Blue Desert.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -6980,129 +7021,322 @@
           },
           {
             "objectName": "HealthBar"
+          },
+          {
+            "objectName": "Background"
           }
         ]
       },
       "events": [
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Mining Logic",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "//  MINING LOGIC",
+                "",
+                "const inputManager = runtimeScene.getGame().getInputManager();",
+                "const mouseX = runtimeScene.getGame().getInputManager().getMouseX();",
+                "const mouseY = runtimeScene.getGame().getInputManager().getMouseY();",
+                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese_Deposit\", \"Cobalt_Deposit\", \"Shale\"]",
+                "var blocks = [];",
+                "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
+                "const robot = runtimeScene.getObjects(\"Robot\")[0];",
+                "let hoveredBlock = null;",
+                "",
+                "// Calculate tint based on health ",
+                "function calculateTint(currentHealth, maxHealth) {",
+                "",
+                "    const healthPercentage = currentHealth / maxHealth;",
+                "    const tintValue = Math.round(100 + (255 - 100) * (Math.max(0, Math.min(1, healthPercentage))));    ",
+                "    return `${tintValue};${tintValue};${tintValue}`;",
+                "}",
+                "",
+                "// Set the tint",
+                "blocks.map(block => {",
+                "    const blockHealth = block.getVariableNumber(block.getVariables().get(\"Health\"));",
+                "    const blockMaxHealth = block.getVariableNumber(block.getVariables().get(\"MaxHealth\"));",
+                "    const blockBounds = block.getAABB();",
+                "    block.setColor(calculateTint(blockHealth, blockMaxHealth));",
+                "    if (mouseX >= blockBounds.min[0] && mouseX <= blockBounds.max[0] &&",
+                "        mouseY >= blockBounds.min[1] && mouseY <= blockBounds.max[1]) {",
+                "        hoveredBlock = block;",
+                "    }",
+                "});",
+                "",
+                "const currentTime = Date.now();",
+                "const lastMiningActionTime = runtimeScene.getVariables().get(\"lastMiningActionTime\").getAsNumber();",
+                "const deltaTime = (currentTime - lastMiningActionTime) / 1000;",
+                "",
+                "if (hoveredBlock && robot) {",
+                "    if (hoveredBlock.getDistanceToObject(robot) < robot.getVariables().get(\"Reach\").getAsNumber()) {",
+                "        hoveredBlock.setColor(\"74;144;226\");",
+                "",
+                "        if (inputManager.isMouseButtonPressed(0)) {",
+                "            const damage = robot.getVariables().get(\"Mine_Strength\").getAsNumber() * deltaTime;",
+                "            const blockHealth = hoveredBlock.getVariables().get(\"Health\");",
+                "            blockHealth.sub(damage);",
+                "",
+                "            // Update the last mining action time to the current time",
+                "            runtimeScene.getVariables().get(\"lastMiningActionTime\").setNumber(currentTime);",
+                "",
+                "            // If the health is below or equal to 0, delete the block",
+                "            if (blockHealth.getAsNumber() <= 0) {",
+                "                runtimeScene.markObjectForDeletion(hoveredBlock);",
+                "            }",
+                "            ",
+                "        } else {",
+                "            runtimeScene.getVariables().get(\"lastMiningActionTime\").setNumber(currentTime);",
+                "        }",
+                "    }",
+                "}"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                "Robot"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "Robot",
+                "Robot",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "3",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "SetCameraCenterX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Robot.CenterX()",
+                "",
+                ""
+              ]
+            }
+          ]
         },
         {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "// ROBOT MOVEMENT AND ANIMATION",
-            "",
-            "const robot = runtimeScene.getObjects(\"Robot\")[0]; // Assuming \"Robot\" is the object name",
-            "",
-            "if (robot.hasBehavior(\"PlatformerObject\")) {",
-            "    const platformerBehavior = robot.getBehavior(\"PlatformerObject\");",
-            "    ",
-            "// Check if 'D' key is pressed for moving right",
-            "if (gdjs.evtTools.input.isKeyPressed(runtimeScene, \"d\")) {",
-            "    robot.getBehavior(\"PlatformerObject\").simulateRightKey();",
-            "}",
-            "",
-            "// Check if 'A' key is pressed for moving left",
-            "if (gdjs.evtTools.input.isKeyPressed(runtimeScene, \"a\")) {",
-            "    robot.getBehavior(\"PlatformerObject\").simulateLeftKey();",
-            "    robot.flipX(true); // This assumes you want the sprite to face left when moving left",
-            "}",
-            "",
-            "// Check if 'W' key is pressed for jumping",
-            "if (gdjs.evtTools.input.isKeyPressed(runtimeScene, \"w\")) {",
-            "    robot.getBehavior(\"PlatformerObject\").simulateJumpKey();",
-            "}",
-            "",
-            "    // Check if the robot is on the floor and moving",
-            "    if (platformerBehavior.isOnFloor() && platformerBehavior.isMoving()) {",
-            "        robot.setAnimation(0);",
-            "        // Handling left and right keys for flipping",
-            "        if (gdjs.evtTools.input.isKeyPressed(runtimeScene, \"Left\") || gdjs.evtTools.input.isKeyPressed(runtimeScene, \"a\")) {",
-            "            robot.flipX(true);",
-            "        } else if (gdjs.evtTools.input.isKeyPressed(runtimeScene, \"Right\") || gdjs.evtTools.input.isKeyPressed(runtimeScene, \"d\")) {",
-            "            robot.flipX(false);",
-            "        }",
-            "    } else if (!platformerBehavior.isOnFloor()) {",
-            "        // If the robot is not moving or not on the floor, set animation to \"Idle\"",
-            "        robot.setAnimation(2);",
-            "    } else {",
-            "        robot.setAnimation(1);",
-            "    }",
-            "}"
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject",
+                    "\"Left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Animation",
+                    "=",
+                    "\"Run\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject",
+                    "\"Right\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Animation",
+                    "=",
+                    "\"Run\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipX"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Animation",
+                    "=",
+                    "\"Idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Up"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject"
+                  ]
+                }
+              ]
+            }
           ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": true
-        },
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "//  MINING LOGIC",
-            "",
-            "const inputManager = runtimeScene.getGame().getInputManager();",
-            "const mouseX = runtimeScene.getGame().getInputManager().getMouseX();",
-            "const mouseY = runtimeScene.getGame().getInputManager().getMouseY();",
-            "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese_Deposit\", \"Cobalt_Deposit\", \"Shale\"]",
-            "var blocks = [];",
-            "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
-            "const robot = runtimeScene.getObjects(\"Robot\")[0];",
-            "let hoveredBlock = null;",
-            "",
-            "// Calculate tint based on health ",
-            "function calculateTint(currentHealth, maxHealth) {",
-            "",
-            "    const healthPercentage = currentHealth / maxHealth;",
-            "    const tintValue = Math.round(100 + (255 - 100) * (Math.max(0, Math.min(1, healthPercentage))));    ",
-            "    return `${tintValue};${tintValue};${tintValue}`;",
-            "}",
-            "",
-            "// Set the tint",
-            "blocks.map(block => {",
-            "    const blockHealth = block.getVariableNumber(block.getVariables().get(\"Health\"));",
-            "    const blockMaxHealth = block.getVariableNumber(block.getVariables().get(\"MaxHealth\"));",
-            "    const blockBounds = block.getAABB();",
-            "    block.setColor(calculateTint(blockHealth, blockMaxHealth));",
-            "    if (mouseX >= blockBounds.min[0] && mouseX <= blockBounds.max[0] &&",
-            "        mouseY >= blockBounds.min[1] && mouseY <= blockBounds.max[1]) {",
-            "        hoveredBlock = block;",
-            "    }",
-            "});",
-            "",
-            "const currentTime = Date.now();",
-            "const lastMiningActionTime = runtimeScene.getVariables().get(\"lastMiningActionTime\").getAsNumber();",
-            "const deltaTime = (currentTime - lastMiningActionTime) / 1000;",
-            "",
-            "if (hoveredBlock && robot) {",
-            "    if (hoveredBlock.getDistanceToObject(robot) < robot.getVariables().get(\"Reach\").getAsNumber()) {",
-            "        hoveredBlock.setColor(\"74;144;226\");",
-            "",
-            "        if (inputManager.isMouseButtonPressed(0)) {",
-            "            const damage = robot.getVariables().get(\"Mine_Strength\").getAsNumber() * deltaTime;",
-            "            const blockHealth = hoveredBlock.getVariables().get(\"Health\");",
-            "            blockHealth.sub(damage);",
-            "",
-            "            // Update the last mining action time to the current time",
-            "            runtimeScene.getVariables().get(\"lastMiningActionTime\").setNumber(currentTime);",
-            "",
-            "            // If the health is below or equal to 0, delete the block",
-            "            if (blockHealth.getAsNumber() <= 0) {",
-            "                runtimeScene.markObjectForDeletion(hoveredBlock);",
-            "            }",
-            "            ",
-            "        } else {",
-            "            runtimeScene.getVariables().get(\"lastMiningActionTime\").setNumber(currentTime);",
-            "        }",
-            "    }",
-            "}"
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": true
+          "parameters": []
         }
       ],
       "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Background",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
         {
           "ambientLightColorB": 200,
           "ambientLightColorG": 200,

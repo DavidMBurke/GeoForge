@@ -598,7 +598,37 @@
         "zoomFactor": 0.5468750000000014,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Blocks",
+          "objects": [
+            {
+              "name": "Dirt"
+            },
+            {
+              "name": "Basalt"
+            },
+            {
+              "name": "Diorite"
+            },
+            {
+              "name": "Sand"
+            },
+            {
+              "name": "Shale"
+            },
+            {
+              "name": "Clay"
+            },
+            {
+              "name": "Manganese_Deposit"
+            },
+            {
+              "name": "Cobalt_Deposit"
+            }
+          ]
+        }
+      ],
       "variables": [],
       "instances": [
         {
@@ -7100,7 +7130,7 @@
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
             }
           ],
           "parameters": []
@@ -7136,7 +7166,7 @@
               },
               "parameters": [
                 "",
-                "3",
+                "2",
                 "",
                 ""
               ]
@@ -7166,6 +7196,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7301,6 +7332,126 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Mining",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Blocks",
+                "\"\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Blocks",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Robot",
+                "Blocks",
+                "Robot.Reach",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Blocks",
+                "\"43;34;34\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "Health",
+                    "-",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Blocks",
+                "Health",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Blocks",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [

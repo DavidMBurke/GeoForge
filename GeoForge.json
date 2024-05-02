@@ -595,7 +595,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5468750000000014,
+        "zoomFactor": 0.5117784035210186,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4882,7 +4882,6 @@
           "customSize": true,
           "depth": 0.9315068493150684,
           "height": 13.972602739726026,
-          "keepRatio": true,
           "layer": "",
           "name": "HealthBarBox",
           "persistentUuid": "70521146-485b-4cdc-bb78-6a3023106182",
@@ -4899,7 +4898,6 @@
           "customSize": true,
           "depth": 1,
           "height": 9,
-          "keepRatio": true,
           "layer": "",
           "name": "HealthBar",
           "persistentUuid": "a3fb4e75-449c-4cb6-bf91-4e239d75b677",
@@ -4915,7 +4913,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Sand",
           "persistentUuid": "1d7816ad-9b84-411b-a549-4f7261b04379",
@@ -4931,7 +4928,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "1500bc5c-4bc1-4a4b-8521-b03b678870ba",
@@ -4947,7 +4943,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Diorite",
           "persistentUuid": "ea9ec2ad-24ab-4f4a-996b-0d83061a4f76",
@@ -4963,7 +4958,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Manganese_Deposit",
           "persistentUuid": "462beddf-60d4-4a72-a040-67c0e2c77303",
@@ -4979,7 +4973,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Cobalt_Deposit",
           "persistentUuid": "b4e138f9-fe1d-492e-bbfc-90efba72e23f",
@@ -4995,7 +4988,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Shale",
           "persistentUuid": "030ce91f-7689-4269-b206-e47d04dfbea6",
@@ -5011,7 +5003,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Sand",
           "persistentUuid": "0e63f0e6-5ad9-4155-b9f7-cdf907f6387b",
@@ -5027,7 +5018,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "21415f34-a975-4a61-bbfb-d2ed291c51b5",
@@ -5043,7 +5033,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Diorite",
           "persistentUuid": "976306d6-baa0-4ab1-bf51-3bcac6d7c865",
@@ -5059,7 +5048,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Manganese_Deposit",
           "persistentUuid": "b74d8eaa-c843-4880-8910-95d8bd7d23de",
@@ -5075,7 +5063,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Cobalt_Deposit",
           "persistentUuid": "f5f5cf50-0c1b-4ac5-a6d6-b077e415fffa",
@@ -5091,7 +5078,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Shale",
           "persistentUuid": "e71bc83f-315d-415d-8839-853500306a27",
@@ -5107,7 +5093,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Sand",
           "persistentUuid": "d153a65e-dcca-41a8-a879-9b85de2ce247",
@@ -5123,7 +5108,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "d63e561a-233d-4ae6-bec8-0e6f3f4b6f86",
@@ -5139,7 +5123,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Diorite",
           "persistentUuid": "3b069915-6eea-4146-8407-ee3097a30798",
@@ -5155,7 +5138,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Manganese_Deposit",
           "persistentUuid": "912d0c0f-cd3d-49e1-a3af-296f10d73a3a",
@@ -5171,7 +5153,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Cobalt_Deposit",
           "persistentUuid": "1ef23660-70c8-4905-a5dd-700045dbe35f",
@@ -5187,7 +5168,6 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "keepRatio": true,
           "layer": "",
           "name": "Shale",
           "persistentUuid": "7bf559fe-3188-45ea-908f-f4995bef15c9",
@@ -5204,7 +5184,6 @@
           "customSize": true,
           "depth": 1,
           "height": 512,
-          "keepRatio": true,
           "layer": "Background",
           "name": "Background",
           "persistentUuid": "25f144a7-52ca-436b-a92d-537e77e54653",
@@ -7070,20 +7049,13 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "//  MINING LOGIC",
                 "",
-                "const inputManager = runtimeScene.getGame().getInputManager();",
-                "const mouseX = runtimeScene.getGame().getInputManager().getMouseX();",
-                "const mouseY = runtimeScene.getGame().getInputManager().getMouseY();",
                 "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese_Deposit\", \"Cobalt_Deposit\", \"Shale\"]",
                 "var blocks = [];",
                 "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
-                "const robot = runtimeScene.getObjects(\"Robot\")[0];",
-                "let hoveredBlock = null;",
                 "",
                 "// Calculate tint based on health ",
                 "function calculateTint(currentHealth, maxHealth) {",
-                "",
                 "    const healthPercentage = currentHealth / maxHealth;",
                 "    const tintValue = Math.round(100 + (255 - 100) * (Math.max(0, Math.min(1, healthPercentage))));    ",
                 "    return `${tintValue};${tintValue};${tintValue}`;",
@@ -7093,44 +7065,13 @@
                 "blocks.map(block => {",
                 "    const blockHealth = block.getVariableNumber(block.getVariables().get(\"Health\"));",
                 "    const blockMaxHealth = block.getVariableNumber(block.getVariables().get(\"MaxHealth\"));",
-                "    const blockBounds = block.getAABB();",
                 "    block.setColor(calculateTint(blockHealth, blockMaxHealth));",
-                "    if (mouseX >= blockBounds.min[0] && mouseX <= blockBounds.max[0] &&",
-                "        mouseY >= blockBounds.min[1] && mouseY <= blockBounds.max[1]) {",
-                "        hoveredBlock = block;",
-                "    }",
                 "});",
-                "",
-                "const currentTime = Date.now();",
-                "const lastMiningActionTime = runtimeScene.getVariables().get(\"lastMiningActionTime\").getAsNumber();",
-                "const deltaTime = (currentTime - lastMiningActionTime) / 1000;",
-                "",
-                "if (hoveredBlock && robot) {",
-                "    if (hoveredBlock.getDistanceToObject(robot) < robot.getVariables().get(\"Reach\").getAsNumber()) {",
-                "        hoveredBlock.setColor(\"74;144;226\");",
-                "",
-                "        if (inputManager.isMouseButtonPressed(0)) {",
-                "            const damage = robot.getVariables().get(\"Mine_Strength\").getAsNumber() * deltaTime;",
-                "            const blockHealth = hoveredBlock.getVariables().get(\"Health\");",
-                "            blockHealth.sub(damage);",
-                "",
-                "            // Update the last mining action time to the current time",
-                "            runtimeScene.getVariables().get(\"lastMiningActionTime\").setNumber(currentTime);",
-                "",
-                "            // If the health is below or equal to 0, delete the block",
-                "            if (blockHealth.getAsNumber() <= 0) {",
-                "                runtimeScene.markObjectForDeletion(hoveredBlock);",
-                "            }",
-                "            ",
-                "        } else {",
-                "            runtimeScene.getVariables().get(\"lastMiningActionTime\").setNumber(currentTime);",
-                "        }",
-                "    }",
-                "}"
+                ""
               ],
               "parameterObjects": "",
               "useStrict": true,
-              "eventsSheetExpanded": false
+              "eventsSheetExpanded": true
             }
           ],
           "parameters": []
@@ -7196,7 +7137,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7329,6 +7269,81 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "a"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "d"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "w"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlatformBehavior::SimulateJumpKey"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "PlatformerObject"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -7419,7 +7434,7 @@
                     "Blocks",
                     "Health",
                     "-",
-                    "1"
+                    "Robot.Mine_Strength * TimeDelta()"
                   ]
                 }
               ]
@@ -7452,6 +7467,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [

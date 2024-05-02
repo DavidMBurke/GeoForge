@@ -654,7 +654,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.604083874998888,
+        "zoomFactor": 0.5843784410740942,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4938,38 +4938,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0.9315068493150684,
-          "height": 13.972602739726026,
-          "layer": "",
-          "name": "HealthBarBox",
-          "persistentUuid": "70521146-485b-4cdc-bb78-6a3023106182",
-          "width": 68,
-          "x": 128,
-          "y": 32,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 9,
-          "layer": "",
-          "name": "HealthBar",
-          "persistentUuid": "a3fb4e75-449c-4cb6-bf91-4e239d75b677",
-          "width": 50,
-          "x": 137,
-          "y": 35,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -7101,6 +7069,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7108,7 +7077,6 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "",
                 "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese_Deposit\", \"Cobalt_Deposit\", \"Shale\"]",
                 "var blocks = [];",
                 "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
@@ -7120,12 +7088,12 @@
                 "    return `${tintValue};${tintValue};${tintValue}`;",
                 "}",
                 "",
-                "// // Set the tint",
-                "// blocks.map(block => {",
-                "//     const blockHealth = block.getVariableNumber(block.getVariables().get(\"Health\"));",
-                "//     const blockMaxHealth = block.getVariableNumber(block.getVariables().get(\"MaxHealth\"));",
-                "//     block.setColor(calculateTint(blockHealth, blockMaxHealth));",
-                "// });",
+                "// Set the tint",
+                "blocks.map(block => {",
+                "    const blockHealth = block.getVariableNumber(block.getVariables().get(\"Health\"));",
+                "    const blockMaxHealth = block.getVariableNumber(block.getVariables().get(\"MaxHealth\"));",
+                "    block.setColor(calculateTint(blockHealth, blockMaxHealth));",
+                "});",
                 ""
               ],
               "parameterObjects": "",
@@ -7428,7 +7396,7 @@
               },
               "parameters": [
                 "Blocks",
-                "\"`${Math.round(100 + (255 - 100) * (Math.max(0, Math.min(1, Blocks.currentHealth / Blocks.maxHealth))))};${Math.round(100 + (255 - 100) * (Math.max(0, Math.min(1, Blocks.currentHealth / Blocks.maxHealth))))};${Math.round(100 + (255 - 100) * (Math.max(0, Math.min(1, Blocks.currentHealth / Blocks.maxHealth))))}`\""
+                "\"\""
               ]
             }
           ]

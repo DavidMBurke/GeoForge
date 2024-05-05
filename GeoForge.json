@@ -682,6 +682,19 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/e96b43b0ca3fd7775d75a702f44cd1b0dfd325e1db317f7cba84efdf572571fe_Roboto-Regular.ttf",
           "name": "Roboto-Regular.ttf"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Blue spaceship 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue spaceship 3.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/PNG/Enemies/4887f1f955fa4814a4fe52d34ebf2661918cbc01d0dbd06d87febdd3a2bae7af_Blue spaceship 3.png",
+          "name": "Blue spaceship 3.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -721,6 +734,57 @@
           "name": "Reach",
           "type": "number",
           "value": 64
+        },
+        {
+          "name": "Inventory",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Basalt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Clay",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Cobalt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Diorite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Dirt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Manganese",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Sand",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Shale",
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ],
       "effects": [],
@@ -2201,7 +2265,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Manganese_Deposit",
+      "name": "Manganese",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -2282,7 +2346,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Cobalt_Deposit",
+      "name": "Cobalt",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -2464,10 +2528,10 @@
         "objectName": "Diorite"
       },
       {
-        "objectName": "Manganese_Deposit"
+        "objectName": "Manganese"
       },
       {
-        "objectName": "Cobalt_Deposit"
+        "objectName": "Cobalt"
       },
       {
         "objectName": "Shale"
@@ -2497,7 +2561,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.529035740215685,
+        "zoomFactor": 0.5653158055126322,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2523,10 +2587,10 @@
               "name": "Clay"
             },
             {
-              "name": "Manganese_Deposit"
+              "name": "Manganese"
             },
             {
-              "name": "Cobalt_Deposit"
+              "name": "Cobalt"
             }
           ]
         }
@@ -2544,7 +2608,7 @@
           "width": 64,
           "x": 608,
           "y": 288,
-          "zOrder": 1,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6829,7 +6893,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Manganese_Deposit",
+          "name": "Manganese",
           "persistentUuid": "462beddf-60d4-4a72-a040-67c0e2c77303",
           "width": 0,
           "x": 832,
@@ -6844,7 +6908,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Cobalt_Deposit",
+          "name": "Cobalt",
           "persistentUuid": "b4e138f9-fe1d-492e-bbfc-90efba72e23f",
           "width": 0,
           "x": 864,
@@ -6919,7 +6983,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Manganese_Deposit",
+          "name": "Manganese",
           "persistentUuid": "b74d8eaa-c843-4880-8910-95d8bd7d23de",
           "width": 0,
           "x": 832,
@@ -6934,7 +6998,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Cobalt_Deposit",
+          "name": "Cobalt",
           "persistentUuid": "f5f5cf50-0c1b-4ac5-a6d6-b077e415fffa",
           "width": 0,
           "x": 864,
@@ -7009,7 +7073,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Manganese_Deposit",
+          "name": "Manganese",
           "persistentUuid": "912d0c0f-cd3d-49e1-a3af-296f10d73a3a",
           "width": 0,
           "x": 832,
@@ -7024,7 +7088,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Cobalt_Deposit",
+          "name": "Cobalt",
           "persistentUuid": "1ef23660-70c8-4905-a5dd-700045dbe35f",
           "width": 0,
           "x": 864,
@@ -7061,6 +7125,23 @@
           "x": 0,
           "y": 0,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "",
+          "name": "BlueSpaceship3",
+          "persistentUuid": "b7b3d09b-0390-4bfa-8ab8-e6e746a6f081",
+          "width": 128,
+          "x": 32,
+          "y": 256,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7109,6 +7190,66 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "72656ca5155fc560751a510439a49bd349b2ec1fe98ace193e7cf9f3b700b8b4",
+          "name": "BlueSpaceship3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Blue spaceship 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 103,
+                            "y": 0
+                          },
+                          {
+                            "x": 103,
+                            "y": 84
+                          },
+                          {
+                            "x": 0,
+                            "y": 84
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -7122,6 +7263,9 @@
           },
           {
             "objectName": "Background"
+          },
+          {
+            "objectName": "BlueSpaceship3"
           }
         ]
       },
@@ -7218,6 +7362,18 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Robot.CenterY()",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -7226,6 +7382,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7445,122 +7602,157 @@
           "name": "Mining",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "Blocks",
-                "\"\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Blocks",
-                "",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "\"\""
+                  ]
+                }
               ]
             },
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Robot",
-                "Blocks",
-                "Robot.Reach",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "Blocks",
-                "\"43;34;34\""
-              ]
-            }
-          ],
-          "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "MouseButtonPressed"
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
+                    "Blocks",
                     "",
-                    "Left"
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Blocks",
+                    "Robot.Reach",
+                    ""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "\"43;34;34\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Health",
+                        "-",
+                        "Robot.Mine_Strength * TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
                   },
                   "parameters": [
                     "Blocks",
                     "Health",
-                    "-",
-                    "Robot.Mine_Strength * TimeDelta()"
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Inventory[Blocks.ObjectName()]",
+                    "+",
+                    "1"
                   ]
                 }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "VarObjet"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Blocks",
-                "Health",
-                "<=",
-                "0"
+                "BlueSpaceship3",
+                "Robot",
+                "",
+                "",
+                "yes"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "ChangeColor"
               },
               "parameters": [
-                "Blocks",
-                ""
+                "BlueSpaceship3",
+                "\"31;9;9\""
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "layers": [
@@ -7623,6 +7815,39 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "GUI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -7723,10 +7948,10 @@
               "name": "Clay"
             },
             {
-              "name": "Manganese_Deposit"
+              "name": "Manganese"
             },
             {
-              "name": "Cobalt_Deposit"
+              "name": "Cobalt"
             }
           ]
         }
@@ -12029,7 +12254,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Manganese_Deposit",
+          "name": "Manganese",
           "persistentUuid": "462beddf-60d4-4a72-a040-67c0e2c77303",
           "width": 0,
           "x": 832,
@@ -12044,7 +12269,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Cobalt_Deposit",
+          "name": "Cobalt",
           "persistentUuid": "b4e138f9-fe1d-492e-bbfc-90efba72e23f",
           "width": 0,
           "x": 864,
@@ -12119,7 +12344,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Manganese_Deposit",
+          "name": "Manganese",
           "persistentUuid": "b74d8eaa-c843-4880-8910-95d8bd7d23de",
           "width": 0,
           "x": 832,
@@ -12134,7 +12359,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Cobalt_Deposit",
+          "name": "Cobalt",
           "persistentUuid": "f5f5cf50-0c1b-4ac5-a6d6-b077e415fffa",
           "width": 0,
           "x": 864,
@@ -12209,7 +12434,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Manganese_Deposit",
+          "name": "Manganese",
           "persistentUuid": "912d0c0f-cd3d-49e1-a3af-296f10d73a3a",
           "width": 0,
           "x": 832,
@@ -12224,7 +12449,7 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Cobalt_Deposit",
+          "name": "Cobalt",
           "persistentUuid": "1ef23660-70c8-4905-a5dd-700045dbe35f",
           "width": 0,
           "x": 864,

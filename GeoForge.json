@@ -695,6 +695,45 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Space Shooter/PNG/Enemies/4887f1f955fa4814a4fe52d34ebf2661918cbc01d0dbd06d87febdd3a2bae7af_Blue spaceship 3.png",
           "name": "Blue spaceship 3.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grey Button_Hovered.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button_Hovered.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/b43e0035dca80ea2fad5c5d65de926dae0185038e5f9cb21d5f20234f30d1c76_Grey Button_Hovered.png",
+          "name": "Grey Button_Hovered.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grey Button_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/da7fc2efa0882eb5dfa0266315f2483c2f68d86a6751dc309ea9e9d0dd4759ba_Grey Button_Idle.png",
+          "name": "Grey Button_Idle.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Grey Button_Pressed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Button_Pressed.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/49c35e14af0e1f7aae407455cb944de96328955870e5f1500f63723ad879a42e_Grey Button_Pressed.png",
+          "name": "Grey Button_Pressed.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -2510,36 +2549,241 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "folderName": "Blocks",
+        "children": [
+          {
+            "objectName": "Dirt"
+          },
+          {
+            "objectName": "Clay"
+          },
+          {
+            "objectName": "Basalt"
+          },
+          {
+            "objectName": "Sand"
+          },
+          {
+            "objectName": "Diorite"
+          },
+          {
+            "objectName": "Manganese"
+          },
+          {
+            "objectName": "Cobalt"
+          },
+          {
+            "objectName": "Shale"
+          }
+        ]
+      },
+      {
         "objectName": "Robot"
-      },
-      {
-        "objectName": "Dirt"
-      },
-      {
-        "objectName": "Clay"
-      },
-      {
-        "objectName": "Sand"
-      },
-      {
-        "objectName": "Basalt"
-      },
-      {
-        "objectName": "Diorite"
-      },
-      {
-        "objectName": "Manganese"
-      },
-      {
-        "objectName": "Cobalt"
-      },
-      {
-        "objectName": "Shale"
       }
     ]
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "ShipStorage",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Dirt",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "WorldStorage",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "Alumina",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Carbonate",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Copper",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Feldspar",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Iron",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Lime",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Magnesia",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Organic_Material",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Potassium_Oxide",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Quartz",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Silica",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Soda",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Titania",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Upgrades",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Drill",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Level",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Mine_Strength",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 2
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 3
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 5
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 8
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 12
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 13
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Name",
+              "type": "string",
+              "value": "Drill"
+            },
+            {
+              "name": "Upgrade_Names",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Old Rusty Drill"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Fiberglass Drill"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Copper Drill"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Iron Drill"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Steel Drill"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Cobalt Drill"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "Variable",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -2561,7 +2805,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5653158055126322,
+        "zoomFactor": 0.46331118245139896,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2595,7 +2839,26 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "Inventory",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Dirt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Sand",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -2606,7 +2869,7 @@
           "name": "Robot",
           "persistentUuid": "245ec58a-d634-4ba6-a54f-23eb5aaac502",
           "width": 64,
-          "x": 608,
+          "x": 192,
           "y": 288,
           "zOrder": 2,
           "numberProperties": [],
@@ -7250,6 +7513,47 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Inventory",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -7266,6 +7570,9 @@
           },
           {
             "objectName": "BlueSpaceship3"
+          },
+          {
+            "objectName": "Inventory"
           }
         ]
       },
@@ -7275,7 +7582,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7283,7 +7589,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese_Deposit\", \"Cobalt_Deposit\", \"Shale\"]",
+                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese\", \"Cobalt\", \"Shale\"]",
                 "var blocks = [];",
                 "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
                 "",
@@ -7382,7 +7688,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7712,11 +8017,20 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "ModVarScene"
                   },
                   "parameters": [
-                    "Robot",
                     "Inventory[Blocks.ObjectName()]",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "ShipStorage[Blocks.ObjectName()]",
                     "+",
                     "1"
                   ]
@@ -7745,11 +8059,45 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeColor"
+                "value": "Scene"
               },
               "parameters": [
-                "BlueSpaceship3",
-                "\"31;9;9\""
+                "",
+                "\"World Map\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "May not be necessary if decide to do full scene reset, but if want to keep progress\n"
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "Inventory",
+              "valueIteratorVariableName": "block",
+              "keyIteratorVariableName": "blockName",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Inventory[VariableString(blockName)]",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             }
           ]
@@ -7899,6 +8247,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -13530,6 +13882,11 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -13637,7 +13994,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.5117784035210177,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -13674,6 +14031,56 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 50,
+          "keepRatio": true,
+          "layer": "",
+          "name": "drill_upgrade_button",
+          "persistentUuid": "6cee813b-9145-4a63-96c5-5e2135b365c2",
+          "width": 241,
+          "x": 64,
+          "y": 262,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 52,
+          "keepRatio": true,
+          "layer": "",
+          "name": "drill_label",
+          "persistentUuid": "ea985411-9461-4abd-a541-ad9b86365674",
+          "width": 217,
+          "x": 70,
+          "y": 43,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "drill_cost",
+          "persistentUuid": "b26f8990-c062-4fcc-b137-65a1be711de2",
+          "width": 0,
+          "x": 71,
+          "y": 89,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -13681,21 +14088,21 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "NewText",
+          "name": "drill_cost",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Text",
+          "string": "Current Mining Strength:\nNext Upgrade Strength:\n\nRequirements:\n-\n-\n-\n",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 255,
+            "g": 255,
+            "r": 255
           },
           "content": {
             "bold": false,
@@ -13711,11 +14118,11 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Text",
+            "text": "Current Mining Strength:\nNext Upgrade Strength:\n\nRequirements:\n-\n-\n-\n",
             "font": "",
             "textAlignment": "left",
             "characterSize": 20,
-            "color": "0;0;0"
+            "color": "255;255;255"
           }
         },
         {
@@ -13883,23 +14290,219 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "drill_upgrade_button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Upgrade",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 24,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Upgrade",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 24,
+                "color": "72;72;79"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "drill_label",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Mining Laser",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Mining Laser",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "NewText"
+            "objectName": "drill_cost"
           },
           {
             "objectName": "Main_Menu_Button"
           },
           {
             "objectName": "World_Map_Button"
+          },
+          {
+            "objectName": "drill_upgrade_button"
+          },
+          {
+            "objectName": "drill_label"
           }
         ]
       },
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Get scene labels",
+            "var drill_label = runtimeScene.getObjects(\"drill_label\")[0];",
+            "var drill_cost_text = runtimeScene.getObjects(\"drill_cost\")[0];",
+            "",
+            "if (drill_label !== null) {",
+            "    var level = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Level\").getAsNumber();",
+            "",
+            "    var upgradeName = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Upgrade_Names\").getChildAt(level).getAsString();",
+            "    drill_label.setString(upgradeName);",
+            "}",
+            "",
+            "if (drill_cost_text !== null) {",
+            "    var currentStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(level).getAsNumber();",
+            "    var nextStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(level + 1).getAsNumber();",
+            "    var s = \"Current mining strength: \" + currentStrength;",
+            "    if (nextStrength) {",
+            "        s += \"\\nNext level mining strength: \" + nextStrength.toString() + \" (+\" + (nextStrength-currentStrength).toString() + \")\";",
+            "    }",
+            "",
+            "    var cost = ",
+            "",
+            "    drill_cost_text.setString(s);",
+            "}",
+            "",
+            "",
+            "class UpgradeCost {",
+            "    constructor(silica = 0, alumina = 0, copper = 0, potassium_oxide = 0, soda = 0, lime = 0, iron = 0, carbonate = 0, magnesia = 0, titania = 0, organic_material = 0, quartz = 0, feldspar = 0, cobalt = 0) {",
+            "        this.silica = silica;",
+            "        this.alumina = alumina;",
+            "        this.copper = copper;",
+            "        this.potassium_oxide = potassium_oxide;",
+            "        this.soda = soda;",
+            "        this.lime = lime;",
+            "        this.iron = iron;",
+            "        this.carbonate = carbonate;",
+            "        this.magnesia = magnesia;",
+            "        this.titania = titania;",
+            "        this.organic_material = organic_material;",
+            "        this.quartz = quartz;",
+            "        this.feldspar = feldspar;",
+            "        this.cobalt = cobalt;",
+            "    }",
+            "}",
+            "",
+            "var drillUpgradeCosts = [",
+            "    new UpgradeCost(0), // won't be used, just to keep indexing aligned",
+            "    new UpgradeCost(25000, 1000), //Fiberglass",
+            "    new UpgradeCost(0, 0, 5000), //Copper",
+            "    new UpgradeCost(0, 0, 0, 0, 0, 0, 10000), //Iron",
+            "    new UpgradeCost(0, 0, 0, 0, 0, 0, 25000, 25000), //Steel",
+            "    new UpgradeCost(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10000) //Cobalt",
+            "]",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [

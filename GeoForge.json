@@ -14464,7 +14464,6 @@
             "        s += \"\\nNext level mining strength: \" + nextStrength.toString() + \" (+\" + (nextStrength-currentStrength).toString() + \")\";",
             "    }",
             "",
-            "    var cost = ",
             "",
             "    drill_cost_text.setString(s);",
             "}",

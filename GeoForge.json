@@ -2598,89 +2598,89 @@
       ]
     },
     {
-      "folded": true,
       "name": "WorldStorage",
       "type": "structure",
       "children": [
         {
           "folded": true,
-          "name": "Alumina",
+          "name": "alumina",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Carbonate",
+          "name": "carbonate",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Copper",
+          "name": "copper",
           "type": "number",
           "value": 0
         },
         {
-          "name": "Feldspar",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "folded": true,
-          "name": "Iron",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "Lime",
+          "name": "feldspar",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Magnesia",
+          "name": "iron",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "lime",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Organic_Material",
+          "name": "magnesia",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Potassium_Oxide",
+          "name": "organic_material",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Quartz",
+          "name": "potassium_oxide",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Silica",
+          "name": "quartz",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Soda",
+          "name": "silica",
           "type": "number",
           "value": 0
         },
         {
           "folded": true,
-          "name": "Titania",
+          "name": "soda",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "titania",
           "type": "number",
           "value": 0
         }
       ]
     },
     {
+      "folded": true,
       "name": "Upgrades",
       "type": "structure",
       "children": [
@@ -14081,6 +14081,39 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "resources",
+          "persistentUuid": "08a2ae3d-289b-470e-817a-fbad5b565165",
+          "width": 0,
+          "x": 926,
+          "y": 38,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 76,
+          "keepRatio": true,
+          "layer": "",
+          "name": "resources_button",
+          "persistentUuid": "3923ee80-8915-4081-8475-205d4decaf58",
+          "width": 113,
+          "x": 1138,
+          "y": 617,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -14095,7 +14128,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Current Mining Strength:\nNext Upgrade Strength:\n\nRequirements:\n-\n-\n-\n",
+          "string": "Current Mining Strength:\nNext Upgrade Strength:\n\nRequirements:\n-\n-this will all populate \non game load\n-\n",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -14118,7 +14151,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Current Mining Strength:\nNext Upgrade Strength:\n\nRequirements:\n-\n-\n-\n",
+            "text": "Current Mining Strength:\nNext Upgrade Strength:\n\nRequirements:\n-\n-this will all populate \non game load\n-\n",
             "font": "",
             "textAlignment": "left",
             "characterSize": 20,
@@ -14385,7 +14418,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Mining Laser",
+          "string": "Drill",
           "font": "",
           "textAlignment": "left",
           "characterSize": 30,
@@ -14408,11 +14441,135 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Mining Laser",
+            "text": "Drill",
             "font": "",
             "textAlignment": "left",
             "characterSize": 30,
             "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "resources",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Resources\n\n-\n-\n-\nThis will populate\nwhen the game loads",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 24,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Resources\n\n-\n-\n-\nThis will populate\nwhen the game loads",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 24,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "resources_button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "1M Resources",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 16,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "1M Resources",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 16,
+                "color": "72;72;79"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
           }
         }
       ],
@@ -14433,6 +14590,12 @@
           },
           {
             "objectName": "drill_label"
+          },
+          {
+            "objectName": "resources"
+          },
+          {
+            "objectName": "resources_button"
           }
         ]
       },
@@ -14445,29 +14608,10 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "// Get scene labels",
+            "/////////////// DRILL BUTTONS",
             "var drill_label = runtimeScene.getObjects(\"drill_label\")[0];",
             "var drill_cost_text = runtimeScene.getObjects(\"drill_cost\")[0];",
-            "",
-            "if (drill_label !== null) {",
-            "    var level = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Level\").getAsNumber();",
-            "",
-            "    var upgradeName = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Upgrade_Names\").getChildAt(level).getAsString();",
-            "    drill_label.setString(upgradeName);",
-            "}",
-            "",
-            "if (drill_cost_text !== null) {",
-            "    var currentStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(level).getAsNumber();",
-            "    var nextStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(level + 1).getAsNumber();",
-            "    var s = \"Current mining strength: \" + currentStrength;",
-            "    if (nextStrength) {",
-            "        s += \"\\nNext level mining strength: \" + nextStrength.toString() + \" (+\" + (nextStrength-currentStrength).toString() + \")\";",
-            "    }",
-            "",
-            "",
-            "    drill_cost_text.setString(s);",
-            "}",
-            "",
+            "var drill_upgrade_button = runtimeScene.getObjects(\"drill_upgrade_button\")[0];",
             "",
             "class UpgradeCost {",
             "    constructor(silica = 0, alumina = 0, copper = 0, potassium_oxide = 0, soda = 0, lime = 0, iron = 0, carbonate = 0, magnesia = 0, titania = 0, organic_material = 0, quartz = 0, feldspar = 0, cobalt = 0) {",
@@ -14496,6 +14640,73 @@
             "    new UpgradeCost(0, 0, 0, 0, 0, 0, 25000, 25000), //Steel",
             "    new UpgradeCost(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10000) //Cobalt",
             "]",
+            "",
+            "",
+            "if (drill_label !== null) {",
+            "    var drill_level = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Level\").getAsNumber();",
+            "",
+            "    var upgradeName = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Upgrade_Names\").getChildAt(drill_level).getAsString();",
+            "    drill_label.setString(upgradeName);",
+            "}",
+            "",
+            "if (drill_cost_text !== null) {",
+            "    var currentStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(drill_level).getAsNumber();",
+            "    var nextStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(drill_level + 1).getAsNumber();",
+            "    var s = \"Current mining strength: \" + currentStrength;",
+            "    if (nextStrength) {",
+            "        s += \"\\nNext level mining strength: \" + nextStrength.toString() + \" (+\" + (nextStrength - currentStrength).toString() + \")\";",
+            "    }",
+            "",
+            "    var drill_upgrade_cost = drillUpgradeCosts[drill_level + 1];",
+            "    var can_afford = true;",
+            "    for (const key in drill_upgrade_cost) {",
+            "        if (drill_upgrade_cost[key] > 0) {",
+            "            s += \"\\n  \" + key + \" : \" + drill_upgrade_cost[key];",
+            "",
+            "        }",
+            "        console.log(\"cost > 0: \", drill_upgrade_cost[key] > 0, \"  cost: \", drill_upgrade_cost[key], \"  storage: \",  runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber(), \"  can't afford: \", drill_upgrade_cost[key] > 0 && drill_upgrade_cost[key] > runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber() )",
+            "",
+            "        if (drill_upgrade_cost[key] > 0 && drill_upgrade_cost[key] > runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber()) {",
+            "            can_afford = false;",
+            "        }",
+            "    }",
+            "    drill_upgrade_button.setOpacity(64);",
+            "",
+            "    if (can_afford) {",
+            "        drill_upgrade_button.setOpacity(255);",
+            "    }",
+            "}",
+            "",
+            "drill_cost_text.setString(s);",
+            "",
+            "",
+            "/////////////// RESOURCES ",
+            "",
+            "var resources = runtimeScene.getObjects(\"resources\")[0];",
+            "var resources_string = \"Resources:\\n\";",
+            "resources_string += \"\\nAlumina: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"alumina\").getAsNumber();",
+            "resources_string += \"\\nCarbonate: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"carbonate\").getAsNumber();",
+            "resources_string += \"\\nCopper: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"copper\").getAsNumber();",
+            "resources_string += \"\\nFeldspar: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"feldspar\").getAsNumber();",
+            "resources_string += \"\\nIron: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"iron\").getAsNumber();",
+            "resources_string += \"\\nLime: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"lime\").getAsNumber();",
+            "resources_string += \"\\nMagnesia: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"magnesia\").getAsNumber();",
+            "resources_string += \"\\nOrganic Material: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"organic_material\").getAsNumber();",
+            "resources_string += \"\\nPotassium Oxide: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"potassium_oxide\").getAsNumber();",
+            "resources_string += \"\\nQuartz: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"quartz\").getAsNumber();",
+            "resources_string += \"\\nSilica: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"silica\").getAsNumber();",
+            "resources_string += \"\\nSoda: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"soda\").getAsNumber();",
+            "resources_string += \"\\nTitania: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"titania\").getAsNumber();",
+            "resources.setString(resources_string);",
+            "",
+            "var resources_button = runtimeScene.getObjects(\"resources_button\")[0];",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             ""
           ],
           "parameterObjects": "",
@@ -14556,8 +14767,149 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "resources_button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.alumina",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.carbonate",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.copper",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.feldspar",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.iron",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.lime",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.magnesia",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.organic_material",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.potassium_oxide",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.quartz",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.silica",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.soda",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.titania",
+                "+",
+                "1000000"
+              ]
+            }
+          ]
         }
       ],
       "layers": [

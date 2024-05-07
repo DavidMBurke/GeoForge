@@ -2614,6 +2614,11 @@
           "value": 0
         },
         {
+          "name": "cobalt",
+          "type": "number",
+          "value": 0
+        },
+        {
           "folded": true,
           "name": "copper",
           "type": "number",
@@ -2780,6 +2785,12 @@
     {
       "folded": true,
       "name": "Variable",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "Variable2",
       "type": "string",
       "value": ""
     }
@@ -7582,6 +7593,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7983,7 +7995,7 @@
                         "Blocks",
                         "Health",
                         "-",
-                        "Robot.Mine_Strength * TimeDelta()"
+                        "Upgrades.Drill.Mine_Strength[Upgrades.Drill.Level]* TimeDelta()"
                       ]
                     }
                   ]
@@ -8274,7 +8286,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.993443349825959,
+        "zoomFactor": 0.46331118245139896,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8308,7 +8320,26 @@
           ]
         }
       ],
-      "variables": [],
+      "variables": [
+        {
+          "name": "Inventory",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "Dirt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Sand",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -8319,9 +8350,9 @@
           "name": "Robot",
           "persistentUuid": "245ec58a-d634-4ba6-a54f-23eb5aaac502",
           "width": 64,
-          "x": 608,
+          "x": 192,
           "y": 288,
-          "zOrder": 1,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12841,6 +12872,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "",
+          "name": "BlueSpaceship3",
+          "persistentUuid": "b7b3d09b-0390-4bfa-8ab8-e6e746a6f081",
+          "width": 128,
+          "x": 32,
+          "y": 256,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -12886,6 +12934,107 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "72656ca5155fc560751a510439a49bd349b2ec1fe98ace193e7cf9f3b700b8b4",
+          "name": "BlueSpaceship3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Blue spaceship 3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 103,
+                            "y": 0
+                          },
+                          {
+                            "x": 103,
+                            "y": 84
+                          },
+                          {
+                            "x": 0,
+                            "y": 84
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Inventory",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -12899,6 +13048,12 @@
           },
           {
             "objectName": "Background"
+          },
+          {
+            "objectName": "BlueSpaceship3"
+          },
+          {
+            "objectName": "Inventory"
           }
         ]
       },
@@ -12916,7 +13071,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese_Deposit\", \"Cobalt_Deposit\", \"Shale\"]",
+                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese\", \"Cobalt\", \"Shale\"]",
                 "var blocks = [];",
                 "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
                 "",
@@ -12992,6 +13147,18 @@
                 "",
                 "=",
                 "Robot.CenterX()",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCameraCenterY"
+              },
+              "parameters": [
+                "",
+                "=",
+                "Robot.CenterY()",
                 "",
                 ""
               ]
@@ -13222,122 +13389,200 @@
           "name": "Mining",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
+          "events": [
             {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "Blocks",
-                "\"\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "Blocks",
-                "",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "\"\""
+                  ]
+                }
               ]
             },
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Robot",
-                "Blocks",
-                "Robot.Reach",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "Blocks",
-                "\"43;34;34\""
-              ]
-            }
-          ],
-          "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "MouseButtonPressed"
+                    "value": "SourisSurObjet"
                   },
                   "parameters": [
+                    "Blocks",
                     "",
-                    "Left"
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Robot",
+                    "Blocks",
+                    "Robot.Reach",
+                    ""
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ModVarObjet"
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    "\"43;34;34\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "Left"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Blocks",
+                        "Health",
+                        "-",
+                        "Upgrades.Drill.Mine_Strength[Upgrades.Drill.Level]* TimeDelta()"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
                   },
                   "parameters": [
                     "Blocks",
                     "Health",
-                    "-",
-                    "Robot.Mine_Strength * TimeDelta()"
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Blocks",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Inventory[Blocks.ObjectName()]",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "ShipStorage[Blocks.ObjectName()]",
+                    "+",
+                    "1"
                   ]
                 }
               ]
             }
-          ]
+          ],
+          "parameters": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "VarObjet"
+                "value": "CollisionNP"
               },
               "parameters": [
-                "Blocks",
-                "Health",
-                "<=",
-                "0"
+                "BlueSpaceship3",
+                "Robot",
+                "",
+                "",
+                "yes"
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Delete"
+                "value": "Scene"
               },
               "parameters": [
-                "Blocks",
+                "",
+                "\"World Map\"",
                 ""
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "May not be necessary if decide to do full scene reset, but if want to keep progress\n"
+            },
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "Inventory",
+              "valueIteratorVariableName": "block",
+              "keyIteratorVariableName": "blockName",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "Inventory[VariableString(blockName)]",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "layers": [
@@ -13417,6 +13662,39 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "GUI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -13451,6 +13729,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -14664,7 +14946,6 @@
             "            s += \"\\n  \" + key + \" : \" + drill_upgrade_cost[key];",
             "",
             "        }",
-            "        console.log(\"cost > 0: \", drill_upgrade_cost[key] > 0, \"  cost: \", drill_upgrade_cost[key], \"  storage: \",  runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber(), \"  can't afford: \", drill_upgrade_cost[key] > 0 && drill_upgrade_cost[key] > runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber() )",
             "",
             "        if (drill_upgrade_cost[key] > 0 && drill_upgrade_cost[key] > runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber()) {",
             "            can_afford = false;",
@@ -14672,8 +14953,30 @@
             "    }",
             "    drill_upgrade_button.setOpacity(64);",
             "",
-            "    if (can_afford) {",
-            "        drill_upgrade_button.setOpacity(255);",
+            "    drill_upgrade_button.setOpacity(can_afford ? 255 : 63);",
+            "",
+            "    // Get mouse coordinates",
+            "    const mouseX = runtimeScene.getGame().getInputManager().getMouseX();",
+            "    const mouseY = runtimeScene.getGame().getInputManager().getMouseY();",
+            "",
+            "    // Get the button's position and size",
+            "    const buttonX = drill_upgrade_button.getDrawableX();",
+            "    const buttonY = drill_upgrade_button.getDrawableY();",
+            "    const buttonWidth = drill_upgrade_button.getWidth();",
+            "    const buttonHeight = drill_upgrade_button.getHeight();",
+            "",
+            "    // Check if the mouse is over the button and the left mouse button was released",
+            "    if (runtimeScene.getGame().getInputManager().isMouseButtonReleased(0)) {",
+            "        if (mouseX >= buttonX && mouseX <= buttonX + buttonWidth && mouseY >= buttonY && mouseY <= buttonY + buttonHeight) {",
+            "            if (can_afford) {",
+            "                for (const key in drill_upgrade_cost) {",
+            "                    if (drill_upgrade_cost[key] > 0) {",
+            "                        runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).sub(drill_upgrade_cost[key])",
+            "                    }",
+            "                }",
+            "                runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Level\").add(1);",
+            "            }",
+            "        }",
             "    }",
             "}",
             "",
@@ -14697,6 +15000,7 @@
             "resources_string += \"\\nSilica: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"silica\").getAsNumber();",
             "resources_string += \"\\nSoda: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"soda\").getAsNumber();",
             "resources_string += \"\\nTitania: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"titania\").getAsNumber();",
+            "resources_string += \"\\nCobalt: \" + runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(\"cobalt\").getAsNumber();",
             "resources.setString(resources_string);",
             "",
             "var resources_button = runtimeScene.getObjects(\"resources_button\")[0];",
@@ -14905,6 +15209,16 @@
               },
               "parameters": [
                 "WorldStorage.titania",
+                "+",
+                "1000000"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.cobalt",
                 "+",
                 "1000000"
               ]

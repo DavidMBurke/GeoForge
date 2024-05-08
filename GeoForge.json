@@ -3054,7 +3054,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7370816317994091,
+        "zoomFactor": 0.3111974942445231,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3084,6 +3084,41 @@
             },
             {
               "name": "Cobalt"
+            }
+          ]
+        },
+        {
+          "name": "Inventory",
+          "objects": [
+            {
+              "name": "DirtNum"
+            },
+            {
+              "name": "ClayNum"
+            },
+            {
+              "name": "InventoryText"
+            },
+            {
+              "name": "GraniteNum"
+            },
+            {
+              "name": "BasaltNum"
+            },
+            {
+              "name": "CobaltNum"
+            },
+            {
+              "name": "ShaleNum"
+            },
+            {
+              "name": "ManganeseNum"
+            },
+            {
+              "name": "DioriteNum"
+            },
+            {
+              "name": "SandNum"
             }
           ]
         }
@@ -7686,8 +7721,8 @@
           "name": "InventoryText",
           "persistentUuid": "874d0d45-414e-4432-b013-532680385c26",
           "width": 241,
-          "x": 897,
-          "y": -338,
+          "x": 865,
+          "y": -322,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -7703,8 +7738,8 @@
           "name": "InventoryBack",
           "persistentUuid": "ca57bb72-a96a-4067-8026-12d11a5cda59",
           "width": 582,
-          "x": 730,
-          "y": -352,
+          "x": 698,
+          "y": -336,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -7719,8 +7754,8 @@
           "name": "DirtNum",
           "persistentUuid": "055c1edf-9fa3-4315-9d86-07fe9c6a5203",
           "width": 0,
-          "x": 865,
-          "y": -290,
+          "x": 833,
+          "y": -274,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
@@ -7735,8 +7770,8 @@
           "name": "ClayNum",
           "persistentUuid": "6a6c4b20-63d2-48c1-b4b7-6f85e3fe337f",
           "width": 0,
-          "x": 865,
-          "y": -240,
+          "x": 833,
+          "y": -224,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -7751,8 +7786,8 @@
           "name": "BasaltNum",
           "persistentUuid": "11d81c44-e3dd-4b9e-9bd2-e65ce7547c9d",
           "width": 0,
-          "x": 865,
-          "y": -190,
+          "x": 833,
+          "y": -174,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -7767,8 +7802,8 @@
           "name": "GraniteNum",
           "persistentUuid": "d6418429-a5f3-4299-9b8d-7c482a52d1f1",
           "width": 0,
-          "x": 865,
-          "y": -140,
+          "x": 833,
+          "y": -124,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -7783,8 +7818,8 @@
           "name": "SandNum",
           "persistentUuid": "e79ff926-ea21-4e4b-8014-b5a4b75c4c70",
           "width": 0,
-          "x": 865,
-          "y": -90,
+          "x": 833,
+          "y": -74,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -7799,8 +7834,8 @@
           "name": "DioriteNum",
           "persistentUuid": "fad7a467-c937-4d4d-ad85-fd58fd29cdd8",
           "width": 0,
-          "x": 1030,
-          "y": -290,
+          "x": 998,
+          "y": -274,
           "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
@@ -7815,8 +7850,8 @@
           "name": "ManganeseNum",
           "persistentUuid": "4035d322-6a71-4f8b-97f4-974792acc94f",
           "width": 0,
-          "x": 1030,
-          "y": -240,
+          "x": 998,
+          "y": -224,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -7831,8 +7866,8 @@
           "name": "CobaltNum",
           "persistentUuid": "1c956c2a-77e0-4f30-b2eb-5ad04f9d5756",
           "width": 0,
-          "x": 1030,
-          "y": -190,
+          "x": 998,
+          "y": -174,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -7847,8 +7882,8 @@
           "name": "ShaleNum",
           "persistentUuid": "b69e8a8a-1166-4f8d-bdb6-ad9908d306b7",
           "width": 0,
-          "x": 1030,
-          "y": -140,
+          "x": 998,
+          "y": -124,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -8013,7 +8048,14 @@
           "name": "InventoryBack",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "Hidden",
+              "type": "boolean",
+              "value": true
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -8414,7 +8456,14 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Sticker",
+              "type": "Sticker::Sticker",
+              "OnlyFollowPosition": false,
+              "IsDestroyedWithParent": false
+            }
+          ],
           "string": "Cobalt: 0",
           "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
           "textAlignment": "left",
@@ -9083,6 +9132,150 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Inventory View",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "Inventory",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Sticker::Sticker::Stick"
+                      },
+                      "parameters": [
+                        "Inventory",
+                        "Sticker",
+                        "InventoryBack",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "i"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "InventoryBack",
+                        "Hidden",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "InventoryBack",
+                        "=",
+                        "32"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "InventoryBack",
+                        "Hidden",
+                        "False"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "InventoryBack",
+                        "=",
+                        "-352"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ToggleObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "InventoryBack",
+                        "Hidden"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [

@@ -734,6 +734,15 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/49c35e14af0e1f7aae407455cb944de96328955870e5f1500f63723ad879a42e_Grey Button_Pressed.png",
           "name": "Grey Button_Pressed.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/granite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\granite.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2543,6 +2552,87 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Granite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "Health",
+          "type": "number",
+          "value": 30
+        },
+        {
+          "folded": true,
+          "name": "MaxHealth",
+          "type": "number",
+          "value": 30
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\granite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2559,6 +2649,9 @@
           },
           {
             "objectName": "Basalt"
+          },
+          {
+            "objectName": "Granite"
           },
           {
             "objectName": "Sand"
@@ -2598,6 +2691,7 @@
       ]
     },
     {
+      "folded": true,
       "name": "WorldStorage",
       "type": "structure",
       "children": [
@@ -2685,7 +2779,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "Upgrades",
       "type": "structure",
       "children": [
@@ -2732,7 +2825,7 @@
                 {
                   "folded": true,
                   "type": "number",
-                  "value": 13
+                  "value": 16
                 }
               ]
             },
@@ -2779,6 +2872,93 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Reach",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Length",
+              "type": "array",
+              "children": [
+                {
+                  "type": "number",
+                  "value": 64
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 80
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 96
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 112
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 128
+                },
+                {
+                  "folded": true,
+                  "type": "number",
+                  "value": 144
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "Level",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Name",
+              "type": "string",
+              "value": "Reach"
+            },
+            {
+              "name": "Upgrade_Names",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Scrap Arms"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Fiberglass Arms"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Copper Arms"
+                },
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Iron Arms"
+                },
+                {
+                  "type": "string",
+                  "value": "Steel Arms"
+                },
+                {
+                  "type": "string",
+                  "value": "Cobalt Arms"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -2816,7 +2996,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.46331118245139896,
+        "zoomFactor": 0.5843784410740951,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2956,21 +3136,6 @@
           "persistentUuid": "466c92ad-d389-4cd5-8765-7d22bf284b8c",
           "width": 0,
           "x": 672,
-          "y": 352,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Dirt",
-          "persistentUuid": "e7634a53-033e-4779-becf-dfe008fcee27",
-          "width": 0,
-          "x": 704,
           "y": 352,
           "zOrder": 2,
           "numberProperties": [],
@@ -3601,21 +3766,6 @@
           "persistentUuid": "4bccf31f-197e-4fae-8e56-7d947749c803",
           "width": 0,
           "x": 672,
-          "y": 384,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Dirt",
-          "persistentUuid": "beda6e94-2bd0-4737-8dd6-ef955ae9ecab",
-          "width": 0,
-          "x": 704,
           "y": 384,
           "zOrder": 2,
           "numberProperties": [],
@@ -7419,6 +7569,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Granite",
+          "persistentUuid": "0dbb0826-9eeb-4069-a60d-666045d948a3",
+          "width": 0,
+          "x": 704,
+          "y": 320,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Granite",
+          "persistentUuid": "4a5868de-02e1-4d88-9281-f5bc588c49f3",
+          "width": 0,
+          "x": 704,
+          "y": 352,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Granite",
+          "persistentUuid": "f66c5c23-640d-442d-922f-a1833da076ff",
+          "width": 0,
+          "x": 704,
+          "y": 384,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -7593,7 +7791,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -7601,7 +7798,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese\", \"Cobalt\", \"Shale\"]",
+                "const blockNames = [\"Dirt\", \"Granite\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese\", \"Cobalt\", \"Shale\"]",
                 "var blocks = [];",
                 "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
                 "",
@@ -7956,7 +8153,7 @@
                   "parameters": [
                     "Robot",
                     "Blocks",
-                    "Robot.Reach",
+                    "Upgrades.Reach.Length[Upgrades.Reach.Level]",
                     ""
                   ]
                 }
@@ -13426,7 +13623,7 @@
                   "parameters": [
                     "Robot",
                     "Blocks",
-                    "Robot.Reach",
+                    "Upgrades.Reach.Length[Upgrades.Reach.Level]",
                     ""
                   ]
                 }
@@ -14396,6 +14593,55 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "reach_label",
+          "persistentUuid": "a2c70df4-f80e-40be-a5fe-b5327e3a582a",
+          "width": 0,
+          "x": 438,
+          "y": 34,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "reach_cost",
+          "persistentUuid": "a58193e0-a545-4a65-a0a3-b2ef293b125f",
+          "width": 0,
+          "x": 436,
+          "y": 81,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 51,
+          "keepRatio": true,
+          "layer": "",
+          "name": "reach_upgrade_button",
+          "persistentUuid": "8d8b1ff0-d397-41eb-b46f-a74a0ba8c08d",
+          "width": 256,
+          "x": 412,
+          "y": 261,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -14853,6 +15099,171 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "reach_cost",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Current Reach:\nNext Reach:\n\nRequirements:\n-\n-this will all populate \non game load\n-\n",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Current Reach:\nNext Reach:\n\nRequirements:\n-\n-this will all populate \non game load\n-\n",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "reach_label",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Reach",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Reach",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "reach_upgrade_button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Upgrade",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 24,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Upgrade",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 24,
+                "color": "72;72;79"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -14860,6 +15271,9 @@
         "children": [
           {
             "objectName": "drill_cost"
+          },
+          {
+            "objectName": "reach_cost"
           },
           {
             "objectName": "Main_Menu_Button"
@@ -14871,7 +15285,13 @@
             "objectName": "drill_upgrade_button"
           },
           {
+            "objectName": "reach_upgrade_button"
+          },
+          {
             "objectName": "drill_label"
+          },
+          {
+            "objectName": "reach_label"
           },
           {
             "objectName": "resources"
@@ -14890,11 +15310,21 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "/////////////// DRILL BUTTONS",
+            "",
+            "",
+            "// Retrieve Scene Objects ",
             "var drill_label = runtimeScene.getObjects(\"drill_label\")[0];",
             "var drill_cost_text = runtimeScene.getObjects(\"drill_cost\")[0];",
             "var drill_upgrade_button = runtimeScene.getObjects(\"drill_upgrade_button\")[0];",
+            "var reach_label = runtimeScene.getObjects(\"reach_label\")[0];",
+            "var reach_cost_text = runtimeScene.getObjects(\"reach_cost\")[0];",
+            "var reach_upgrade_button = runtimeScene.getObjects(\"reach_upgrade_button\")[0];",
             "",
+            "// Get mouse coordinates",
+            "const mouseX = runtimeScene.getGame().getInputManager().getMouseX();",
+            "const mouseY = runtimeScene.getGame().getInputManager().getMouseY();",
+            "",
+            "// Define Costs",
             "class UpgradeCost {",
             "    constructor(silica = 0, alumina = 0, copper = 0, potassium_oxide = 0, soda = 0, lime = 0, iron = 0, carbonate = 0, magnesia = 0, titania = 0, organic_material = 0, quartz = 0, feldspar = 0, cobalt = 0) {",
             "        this.silica = silica;",
@@ -14923,6 +15353,16 @@
             "    new UpgradeCost(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10000) //Cobalt",
             "]",
             "",
+            "var reachUpgradeCosts = [",
+            "    new UpgradeCost(0), // won't be used, just to keep indexing aligned",
+            "    new UpgradeCost(25000, 1000), //Fiberglass",
+            "    new UpgradeCost(0, 0, 5000), //Copper",
+            "    new UpgradeCost(0, 0, 0, 0, 0, 0, 10000), //Iron",
+            "    new UpgradeCost(0, 0, 0, 0, 0, 0, 25000, 25000), //Steel",
+            "    new UpgradeCost(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10000) //Cobalt",
+            "]",
+            "",
+            "// Update Labels",
             "",
             "if (drill_label !== null) {",
             "    var drill_level = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Level\").getAsNumber();",
@@ -14930,6 +15370,14 @@
             "    var upgradeName = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Upgrade_Names\").getChildAt(drill_level).getAsString();",
             "    drill_label.setString(upgradeName);",
             "}",
+            "",
+            "if (reach_label !== null) {",
+            "    var reach_level = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Reach\").getChild(\"Level\").getAsNumber();",
+            "    var upgradeName = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Reach\").getChild(\"Upgrade_Names\").getChildAt(reach_level).getAsString();",
+            "    reach_label.setString(upgradeName);",
+            "}",
+            "",
+            "// Update Costs",
             "",
             "if (drill_cost_text !== null) {",
             "    var currentStrength = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Drill\").getChild(\"Mine_Strength\").getChildAt(drill_level).getAsNumber();",
@@ -14946,18 +15394,12 @@
             "            s += \"\\n  \" + key + \" : \" + drill_upgrade_cost[key];",
             "",
             "        }",
-            "",
             "        if (drill_upgrade_cost[key] > 0 && drill_upgrade_cost[key] > runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber()) {",
             "            can_afford = false;",
             "        }",
             "    }",
-            "    drill_upgrade_button.setOpacity(64);",
-            "",
-            "    drill_upgrade_button.setOpacity(can_afford ? 255 : 63);",
-            "",
-            "    // Get mouse coordinates",
-            "    const mouseX = runtimeScene.getGame().getInputManager().getMouseX();",
-            "    const mouseY = runtimeScene.getGame().getInputManager().getMouseY();",
+            "        drill_upgrade_button.setOpacity(64);",
+            "        drill_upgrade_button.setOpacity(can_afford ? 255 : 63);",
             "",
             "    // Get the button's position and size",
             "    const buttonX = drill_upgrade_button.getDrawableX();",
@@ -14978,9 +15420,53 @@
             "            }",
             "        }",
             "    }",
+            "    drill_cost_text.setString(s);",
             "}",
             "",
-            "drill_cost_text.setString(s);",
+            "if (reach_cost_text !== null) {",
+            "    var currentReach = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Reach\").getChild(\"Length\").getChildAt(reach_level).getAsNumber();",
+            "    var nextReach = runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Reach\").getChild(\"Length\").getChildAt(reach_level + 1).getAsNumber();",
+            "    var s = \"Current reach: \" + currentReach;",
+            "    if (nextReach) {",
+            "        s += \"\\nNext level reach: \" + nextReach.toString() + \" (+\" + (nextReach - currentReach).toString() + \")\";",
+            "    }",
+            "",
+            "    var reach_upgrade_cost = reachUpgradeCosts[reach_level + 1];",
+            "    var can_afford = true;",
+            "    for (const key in reach_upgrade_cost) {",
+            "        if (reach_upgrade_cost[key] > 0) {",
+            "            s += \"\\n  \" + key + \" : \" + reach_upgrade_cost[key];",
+            "",
+            "        }",
+            "        if (reach_upgrade_cost[key] > 0 && reach_upgrade_cost[key] > runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).getAsNumber()) {",
+            "            can_afford = false;",
+            "        }",
+            "    }",
+            "        reach_upgrade_button.setOpacity(64);",
+            "        reach_upgrade_button.setOpacity(can_afford ? 255 : 63);",
+            "",
+            "    // Get the button's position and size",
+            "    const buttonX = reach_upgrade_button.getDrawableX();",
+            "    const buttonY = reach_upgrade_button.getDrawableY();",
+            "    const buttonWidth = reach_upgrade_button.getWidth();",
+            "    const buttonHeight = reach_upgrade_button.getHeight();",
+            "",
+            "    // Check if the mouse is over the button and the left mouse button was released",
+            "    if (runtimeScene.getGame().getInputManager().isMouseButtonReleased(0)) {",
+            "        if (mouseX >= buttonX && mouseX <= buttonX + buttonWidth && mouseY >= buttonY && mouseY <= buttonY + buttonHeight) {",
+            "            if (can_afford) {",
+            "                for (const key in reach_upgrade_cost) {",
+            "                    if (reach_upgrade_cost[key] > 0) {",
+            "                        runtimeScene.getGame().getVariables().get(\"WorldStorage\").getChild(key).sub(reach_upgrade_cost[key])",
+            "                    }",
+            "                }",
+            "                runtimeScene.getGame().getVariables().get(\"Upgrades\").getChild(\"Reach\").getChild(\"Level\").add(1);",
+            "            }",
+            "        }",
+            "    }",
+            "    reach_cost_text.setString(s);",
+            "}",
+            "",
             "",
             "",
             "/////////////// RESOURCES ",

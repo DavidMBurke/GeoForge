@@ -3054,7 +3054,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3111974942445231,
+        "zoomFactor": 0.37971210019479706,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3084,6 +3084,9 @@
             },
             {
               "name": "Cobalt"
+            },
+            {
+              "name": "Granite"
             }
           ]
         },
@@ -3130,13 +3133,53 @@
           "children": [
             {
               "folded": true,
+              "name": "Basalt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Clay",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Cobalt",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Diorite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
               "name": "Dirt",
               "type": "number",
               "value": 0
             },
             {
               "folded": true,
+              "name": "Granite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Manganese",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
               "name": "Sand",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Shale",
               "type": "number",
               "value": 0
             }
@@ -7888,6 +7931,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GUI",
+          "name": "InvInstruction",
+          "persistentUuid": "a50e6770-3f97-492a-99db-f82e80ef6a6b",
+          "width": 0,
+          "x": 786,
+          "y": 8,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -8541,6 +8600,47 @@
             "characterSize": 19,
             "color": "56;56;56"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "InvInstruction",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "[ I ] Inventory",
+          "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "[ I ] Inventory",
+            "font": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -8595,6 +8695,9 @@
                 "objectName": "ShaleNum"
               }
             ]
+          },
+          {
+            "objectName": "InvInstruction"
           }
         ]
       },
@@ -9143,7 +9246,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -9272,7 +9374,107 @@
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DirtNum",
+                    "Text",
+                    "=",
+                    "\"Dirt: \" + VariableString(Inventory.Dirt)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ClayNum",
+                    "Text",
+                    "=",
+                    "\"Clay: \" + VariableString(Inventory.Clay)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "BasaltNum",
+                    "Text",
+                    "=",
+                    "\"Basalt: \" + VariableString(Inventory.Basalt)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "GraniteNum",
+                    "Text",
+                    "=",
+                    "\"Granite: \" + VariableString(Inventory.Granite)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "SandNum",
+                    "Text",
+                    "=",
+                    "\"Sand: \" + VariableString(Inventory.Sand)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DioriteNum",
+                    "Text",
+                    "=",
+                    "\"Diorite: \" + VariableString(Inventory.Diorite)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ManganeseNum",
+                    "Text",
+                    "=",
+                    "\"Manganese: \" + VariableString(Inventory.Manganese)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "CobaltNum",
+                    "Text",
+                    "=",
+                    "\"Cobalt: \" + VariableString(Inventory.Cobalt)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "ShaleNum",
+                    "Text",
+                    "=",
+                    "\"Shale: \" + VariableString(Inventory.Shale)"
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []

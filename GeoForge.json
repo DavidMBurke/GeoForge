@@ -1034,9 +1034,9 @@
       "effects": [],
       "behaviors": [
         {
-          "jumpSpeed": 300,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "jumpSpeed": 300,
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -3510,7 +3510,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7130377630690471,
+        "zoomFactor": 0.39251611754882637,
         "windowMask": false
       },
       "objectsGroups": [
@@ -19403,6 +19403,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20372,7 +20373,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5653158055126335,
+        "zoomFactor": 0.3111974942445218,
         "windowMask": false
       },
       "objectsGroups": [
@@ -20456,7 +20457,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 512,
+          "height": 736,
           "layer": "Background",
           "name": "Background",
           "persistentUuid": "25f144a7-52ca-436b-a92d-537e77e54653",

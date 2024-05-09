@@ -865,6 +865,10 @@
         "kind": "image",
         "metadata": "",
         "name": "rockpictures\\chalcopyrite.jpg",
+        "file": "Screenshot 2024-05-08 at 6.30.10 PM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screenshot 2024-05-08 at 6.30.10 PM.png",
         "smoothed": true,
         "userAdded": true
       }
@@ -2761,7 +2765,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Chalcopyrite",
+      "name": "Limestone",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [
@@ -2769,13 +2773,13 @@
           "folded": true,
           "name": "Health",
           "type": "number",
-          "value": 20
+          "value": 25
         },
         {
           "folded": true,
           "name": "MaxHealth",
           "type": "number",
-          "value": 20
+          "value": 25
         }
       ],
       "effects": [],
@@ -2819,16 +2823,16 @@
                         "y": 0
                       },
                       {
-                        "x": 33,
+                        "x": 552,
                         "y": 0
                       },
                       {
-                        "x": 33,
-                        "y": 32
+                        "x": 552,
+                        "y": 552
                       },
                       {
                         "x": 0,
-                        "y": 32
+                        "y": 552
                       }
                     ]
                   ]
@@ -2875,6 +2879,9 @@
           },
           {
             "objectName": "Shale"
+          },
+          {
+            "objectName": "Limestone"
           }
         ]
       },

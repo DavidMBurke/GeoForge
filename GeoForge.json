@@ -3670,8 +3670,58 @@
           "name": "Map-1-8",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "Map-2-1",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-2-2",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "Map-2-3a",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "Map-2-3b",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-2-3c",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "folded": true,
+          "name": "Map-2-4",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-2-5",
+          "type": "boolean",
+          "value": false
         }
       ]
+    },
+    {
+      "folded": true,
+      "name": "EnvironmentalCleanupNeeded",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "Variable",
+      "type": "string",
+      "value": ""
     },
     {
       "folded": true,
@@ -19946,11 +19996,6 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
@@ -21026,7 +21071,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "resource processing",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -43598,6 +43642,55 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Popups",
+          "name": "Objective_Text",
+          "persistentUuid": "8a09ee06-cea8-4972-a739-5e887b987dc7",
+          "width": 0,
+          "x": 32,
+          "y": 32,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GUI",
+          "name": "Objective_Text",
+          "persistentUuid": "e3a950c4-8153-46e9-b8e6-75103e5023ae",
+          "width": 0,
+          "x": 32,
+          "y": 32,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 160,
+          "keepRatio": true,
+          "layer": "Popups",
+          "name": "Popup_Text",
+          "persistentUuid": "6e613e3f-ed53-4343-b8ad-b75962938083",
+          "width": 1248,
+          "x": 64,
+          "y": 496,
+          "zOrder": 63,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -44499,6 +44592,47 @@
             "characterSize": 20,
             "color": "0;0;0"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Objective_Text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Objective",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Objective",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -44550,6 +44684,9 @@
           },
           {
             "objectName": "Popup_Text"
+          },
+          {
+            "objectName": "Objective_Text"
           },
           {
             "objectName": "HealthBar"
@@ -44679,6 +44816,17 @@
               "parameters": [
                 "Popup_Panel"
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Objective_Text",
+                "Text",
+                "=",
+                "\"\""
+              ]
             }
           ]
         },
@@ -44725,8 +44873,712 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Shale",
+                ">=",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "EnvironmentalCleanupNeeded",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"Oh no! You were not careful in your mining practices and you have created an oil spill. This will set back our restoration efforts in a big way, and will take a lot of resources to clean up. \n*Your resources are halved and you earned nothing today*\n\nPress Z to continue\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.alumina",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.carbonate",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.cobalt",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.copper",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.feldspar",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.iron",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.lime",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.magnesia",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.magnesia",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.organic_material",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.potassium_oxide",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.quartz",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.silica",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.soda",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "WorldStorage.titania",
+                "/",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "EnvironmentalCleanupNeeded",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "Inventory",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "EnvironmentalCleanupNeeded",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Popup_Panel"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"World Map\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "EnvironmentalCleanupNeeded",
+                "False"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-1\"]",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"Up until now, we have relied on fossil fuels found in Shale to power our generators. However, this is not sustainable in the long term. We will need to upgrade our factories to use clean energy such as solar and wind, which will require the use of some new materials. Because this location is on a tectonic plate boundary, we're much likely to find some of the more rare metals we need!\n\nMost of the crust is made of silica because it's less dense than most metals in magma so it rises to the surface and solidifies, but near tectonic plate boundaries like these, denser magma containing heavy metals can be brought to the surface through volcanic activity. \n\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-1\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Objective_Text",
+                "Text",
+                "=",
+                "\"\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-1\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "Popup_Panel"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"We should look for Cobalt and Copper so that we can upgrade our equipment and factories. These metals are often found together near tectonic plate boundaries. We should also avoid mining shale, so we don't release trapped carbon and pollutants into the environment.\n\nWhile these minerals will also be useful in generating batteries, which we will need for storing energy as we transition away from our use of fossil fuels to cleaner energy sources, it is important to be mindful that harvesting these metals still has an environmental impact as well. Restoring the Earth will require a careful balance of using what we need to progress while transitioning to fully sustainable practices. Consider as you complete your mission other possibilities for storing energy.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Objective_Text",
+                "Text",
+                "=",
+                "\"Objective:\nMine 10 Cobalt.\nMine 10 Copper-containing deposits.\nMine no more than 5 Shale.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3a\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Chalcopyrite",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"You've found Chalcopyrite! This is a copper-iron-sulfide mineral, and the most abundant Copper ore on Earth. This will make a great source of copper.\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3a\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3b\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Cobalt",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"You've found Cobalt! This is a ferromagnetic metal used in batteries and industrial magnets.\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3b\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3c\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Shale",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"Careful! If you keep mining Shale you may cause an oil spill!\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3c\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-4\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Cobalt",
+                ">=",
+                "10"
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Chalcopyrite",
+                ">=",
+                "10"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-4\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"This should be enough to upgrade our equipment! You can head back to the factory or stay and collect more.\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            }
+          ]
         },
         {
           "colorB": 228,
@@ -45849,13 +46701,98 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "z"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "CanPressZ",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Panel"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"zTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "CanPressZ",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"zTimer\"",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "CanPressZ",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"zTimer\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -46766,14 +47703,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 48,
-          "height": 76,
+          "height": 96,
           "keepRatio": true,
           "layer": "",
           "name": "resources_button",
           "persistentUuid": "3923ee80-8915-4081-8475-205d4decaf58",
-          "width": 113,
-          "x": 1138,
-          "y": 617,
+          "width": 128,
+          "x": 1184,
+          "y": 608,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -46873,6 +47810,23 @@
           "x": 672,
           "y": 96,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 96,
+          "keepRatio": true,
+          "layer": "",
+          "name": "level_up_button",
+          "persistentUuid": "84cf2271-3c70-4abe-858c-ac0cb00e2004",
+          "width": 128,
+          "x": 992,
+          "y": 608,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -47663,6 +48617,89 @@
             "characterSize": 20,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "level_up_button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "+1 all levels",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 16,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "+1 all levels",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 16,
+                "color": "72;72;79"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -47706,6 +48743,9 @@
           },
           {
             "objectName": "resources_button"
+          },
+          {
+            "objectName": "level_up_button"
           }
         ]
       },
@@ -47976,6 +49016,86 @@
           "conditions": [
             {
               "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "level_up_button"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "resources_button"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "t"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "resources_button"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "level_up_button",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "resources_button",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
@@ -48175,6 +49295,58 @@
                 "WorldStorage.cobalt",
                 "+",
                 "1000000"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
+              },
+              "parameters": [
+                "level_up_button",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Upgrades.Drill.Level",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Upgrades.Jump.Level",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Upgrades.Reach.Level",
+                "+",
+                "1"
               ]
             }
           ]

@@ -1051,9 +1051,9 @@
       "effects": [],
       "behaviors": [
         {
-          "jumpSpeed": 300,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "jumpSpeed": 300,
           "acceleration": 1500,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
@@ -19513,6 +19513,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19553,9 +19554,7 @@
               "type": {
                 "value": "DepartScene"
               },
-              "parameters": [
-                "Robot"
-              ]
+              "parameters": ["Robot"]
             }
           ],
           "actions": [
@@ -19563,24 +19562,13 @@
               "type": {
                 "value": "CentreCamera"
               },
-              "parameters": [
-                "Robot",
-                "Robot",
-                "",
-                "",
-                ""
-              ]
+              "parameters": ["Robot", "Robot", "", "", ""]
             },
             {
               "type": {
                 "value": "ZoomCamera"
               },
-              "parameters": [
-                "",
-                "2",
-                "",
-                ""
-              ]
+              "parameters": ["", "2", "", ""]
             }
           ]
         },
@@ -19592,25 +19580,13 @@
               "type": {
                 "value": "SetCameraCenterX"
               },
-              "parameters": [
-                "",
-                "=",
-                "Robot.CenterX()",
-                "",
-                ""
-              ]
+              "parameters": ["", "=", "Robot.CenterX()", "", ""]
             },
             {
               "type": {
                 "value": "SetCameraCenterY"
               },
-              "parameters": [
-                "",
-                "=",
-                "Robot.CenterY()",
-                "",
-                ""
-              ]
+              "parameters": ["", "=", "Robot.CenterY()", "", ""]
             }
           ]
         },
@@ -19638,11 +19614,7 @@
                   "type": {
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject",
-                    "\"Left\""
-                  ]
+                  "parameters": ["Robot", "PlatformerObject", "\"Left\""]
                 }
               ],
               "actions": [
@@ -19650,22 +19622,13 @@
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Animation",
-                    "=",
-                    "\"Run\""
-                  ]
+                  "parameters": ["Robot", "Animation", "=", "\"Run\""]
                 },
                 {
                   "type": {
                     "value": "FlippableCapability::FlippableBehavior::FlipX"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Flippable",
-                    "yes"
-                  ]
+                  "parameters": ["Robot", "Flippable", "yes"]
                 }
               ]
             },
@@ -19676,11 +19639,7 @@
                   "type": {
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject",
-                    "\"Right\""
-                  ]
+                  "parameters": ["Robot", "PlatformerObject", "\"Right\""]
                 }
               ],
               "actions": [
@@ -19688,22 +19647,13 @@
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Animation",
-                    "=",
-                    "\"Run\""
-                  ]
+                  "parameters": ["Robot", "Animation", "=", "\"Run\""]
                 },
                 {
                   "type": {
                     "value": "FlippableCapability::FlippableBehavior::FlipX"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Flippable",
-                    "no"
-                  ]
+                  "parameters": ["Robot", "Flippable", "no"]
                 }
               ]
             },
@@ -19715,10 +19665,7 @@
                     "inverted": true,
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ],
               "actions": [
@@ -19726,12 +19673,7 @@
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
-                  ]
+                  "parameters": ["Robot", "Animation", "=", "\"Idle\""]
                 }
               ]
             },
@@ -19742,10 +19684,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "Up"
-                  ]
+                  "parameters": ["", "Up"]
                 }
               ],
               "actions": [
@@ -19753,10 +19692,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateJumpKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             },
@@ -19767,10 +19703,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "a"
-                  ]
+                  "parameters": ["", "a"]
                 }
               ],
               "actions": [
@@ -19778,10 +19711,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateLeftKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             },
@@ -19792,10 +19722,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "d"
-                  ]
+                  "parameters": ["", "d"]
                 }
               ],
               "actions": [
@@ -19803,10 +19730,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateRightKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             },
@@ -19817,10 +19741,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "w"
-                  ]
+                  "parameters": ["", "w"]
                 }
               ],
               "actions": [
@@ -19828,10 +19749,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateJumpKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             }
@@ -19855,10 +19773,7 @@
                   "type": {
                     "value": "ChangeColor"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "\"\""
-                  ]
+                  "parameters": ["Blocks", "\"\""]
                 }
               ]
             },
@@ -19869,12 +19784,7 @@
                   "type": {
                     "value": "SourisSurObjet"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "",
-                    "",
-                    ""
-                  ]
+                  "parameters": ["Blocks", "", "", ""]
                 },
                 {
                   "type": {
@@ -19893,10 +19803,7 @@
                   "type": {
                     "value": "ChangeColor"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "\"43;34;34\""
-                  ]
+                  "parameters": ["Blocks", "\"43;34;34\""]
                 }
               ],
               "events": [
@@ -19907,10 +19814,7 @@
                       "type": {
                         "value": "MouseButtonPressed"
                       },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
+                      "parameters": ["", "Left"]
                     }
                   ],
                   "actions": [
@@ -19936,12 +19840,7 @@
                   "type": {
                     "value": "VarObjet"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "Health",
-                    "<=",
-                    "0"
-                  ]
+                  "parameters": ["Blocks", "Health", "<=", "0"]
                 }
               ],
               "actions": [
@@ -19949,30 +19848,19 @@
                   "type": {
                     "value": "Delete"
                   },
-                  "parameters": [
-                    "Blocks",
-                    ""
-                  ]
+                  "parameters": ["Blocks", ""]
                 },
                 {
                   "type": {
                     "value": "ModVarScene"
                   },
-                  "parameters": [
-                    "Inventory[Blocks.ObjectName()]",
-                    "+",
-                    "1"
-                  ]
+                  "parameters": ["Inventory[Blocks.ObjectName()]", "+", "1"]
                 },
                 {
                   "type": {
                     "value": "ModVarGlobal"
                   },
-                  "parameters": [
-                    "ShipStorage[Blocks.ObjectName()]",
-                    "+",
-                    "1"
-                  ]
+                  "parameters": ["ShipStorage[Blocks.ObjectName()]", "+", "1"]
                 }
               ]
             }
@@ -19986,13 +19874,7 @@
               "type": {
                 "value": "CollisionNP"
               },
-              "parameters": [
-                "BlueSpaceship3",
-                "Robot",
-                "",
-                "",
-                "yes"
-              ]
+              "parameters": ["BlueSpaceship3", "Robot", "", "", "yes"]
             }
           ],
           "actions": [
@@ -20000,11 +19882,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"World Map\"",
-                ""
-              ]
+              "parameters": ["", "\"World Map\"", ""]
             }
           ],
           "events": [
@@ -20216,9 +20094,7 @@
                   "type": {
                     "value": "DepartScene"
                   },
-                  "parameters": [
-                    ""
-                  ]
+                  "parameters": [""]
                 }
               ],
               "actions": [],
@@ -20250,10 +20126,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "i"
-                  ]
+                  "parameters": ["", "i"]
                 },
                 {
                   "type": {
@@ -20271,11 +20144,7 @@
                       "type": {
                         "value": "ObjectVariableAsBoolean"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "Hidden",
-                        "True"
-                      ]
+                      "parameters": ["InventoryBack", "Hidden", "True"]
                     }
                   ],
                   "actions": [
@@ -20283,11 +20152,7 @@
                       "type": {
                         "value": "MettreY"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "=",
-                        "32"
-                      ]
+                      "parameters": ["InventoryBack", "=", "32"]
                     }
                   ]
                 },
@@ -20298,11 +20163,7 @@
                       "type": {
                         "value": "ObjectVariableAsBoolean"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "Hidden",
-                        "False"
-                      ]
+                      "parameters": ["InventoryBack", "Hidden", "False"]
                     }
                   ],
                   "actions": [
@@ -20310,11 +20171,7 @@
                       "type": {
                         "value": "MettreY"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "=",
-                        "-352"
-                      ]
+                      "parameters": ["InventoryBack", "=", "-352"]
                     }
                   ]
                 },
@@ -20326,10 +20183,7 @@
                       "type": {
                         "value": "ToggleObjectVariableAsBoolean"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "Hidden"
-                      ]
+                      "parameters": ["InventoryBack", "Hidden"]
                     }
                   ]
                 }
@@ -20783,7 +20637,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 512,
+          "height": 736,
           "layer": "Background",
           "name": "Background",
           "persistentUuid": "25f144a7-52ca-436b-a92d-537e77e54653",
@@ -43361,9 +43215,7 @@
               "type": {
                 "value": "DepartScene"
               },
-              "parameters": [
-                "Robot"
-              ]
+              "parameters": ["Robot"]
             }
           ],
           "actions": [
@@ -43371,24 +43223,13 @@
               "type": {
                 "value": "CentreCamera"
               },
-              "parameters": [
-                "Robot",
-                "Robot",
-                "",
-                "",
-                ""
-              ]
+              "parameters": ["Robot", "Robot", "", "", ""]
             },
             {
               "type": {
                 "value": "ZoomCamera"
               },
-              "parameters": [
-                "",
-                "2",
-                "",
-                ""
-              ]
+              "parameters": ["", "2", "", ""]
             }
           ]
         },
@@ -43400,25 +43241,13 @@
               "type": {
                 "value": "SetCameraCenterX"
               },
-              "parameters": [
-                "",
-                "=",
-                "Robot.CenterX()",
-                "",
-                ""
-              ]
+              "parameters": ["", "=", "Robot.CenterX()", "", ""]
             },
             {
               "type": {
                 "value": "SetCameraCenterY"
               },
-              "parameters": [
-                "",
-                "=",
-                "Robot.CenterY()",
-                "",
-                ""
-              ]
+              "parameters": ["", "=", "Robot.CenterY()", "", ""]
             }
           ]
         },
@@ -43438,11 +43267,7 @@
                   "type": {
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject",
-                    "\"Left\""
-                  ]
+                  "parameters": ["Robot", "PlatformerObject", "\"Left\""]
                 }
               ],
               "actions": [
@@ -43450,22 +43275,13 @@
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Animation",
-                    "=",
-                    "\"Run\""
-                  ]
+                  "parameters": ["Robot", "Animation", "=", "\"Run\""]
                 },
                 {
                   "type": {
                     "value": "FlippableCapability::FlippableBehavior::FlipX"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Flippable",
-                    "yes"
-                  ]
+                  "parameters": ["Robot", "Flippable", "yes"]
                 }
               ]
             },
@@ -43476,11 +43292,7 @@
                   "type": {
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject",
-                    "\"Right\""
-                  ]
+                  "parameters": ["Robot", "PlatformerObject", "\"Right\""]
                 }
               ],
               "actions": [
@@ -43488,22 +43300,13 @@
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Animation",
-                    "=",
-                    "\"Run\""
-                  ]
+                  "parameters": ["Robot", "Animation", "=", "\"Run\""]
                 },
                 {
                   "type": {
                     "value": "FlippableCapability::FlippableBehavior::FlipX"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Flippable",
-                    "no"
-                  ]
+                  "parameters": ["Robot", "Flippable", "no"]
                 }
               ]
             },
@@ -43515,10 +43318,7 @@
                     "inverted": true,
                     "value": "PlatformBehavior::PlatformerObjectBehavior::IsMovingEvenALittle"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ],
               "actions": [
@@ -43526,12 +43326,7 @@
                   "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
-                  "parameters": [
-                    "Robot",
-                    "Animation",
-                    "=",
-                    "\"Idle\""
-                  ]
+                  "parameters": ["Robot", "Animation", "=", "\"Idle\""]
                 }
               ]
             },
@@ -43542,10 +43337,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "Up"
-                  ]
+                  "parameters": ["", "Up"]
                 }
               ],
               "actions": [
@@ -43553,10 +43345,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateJumpKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             },
@@ -43567,10 +43356,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "a"
-                  ]
+                  "parameters": ["", "a"]
                 }
               ],
               "actions": [
@@ -43578,10 +43364,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateLeftKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             },
@@ -43592,10 +43375,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "d"
-                  ]
+                  "parameters": ["", "d"]
                 }
               ],
               "actions": [
@@ -43603,10 +43383,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateRightKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             },
@@ -43617,10 +43394,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "w"
-                  ]
+                  "parameters": ["", "w"]
                 }
               ],
               "actions": [
@@ -43628,10 +43402,7 @@
                   "type": {
                     "value": "PlatformBehavior::SimulateJumpKey"
                   },
-                  "parameters": [
-                    "Robot",
-                    "PlatformerObject"
-                  ]
+                  "parameters": ["Robot", "PlatformerObject"]
                 }
               ]
             }
@@ -43655,10 +43426,7 @@
                   "type": {
                     "value": "ChangeColor"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "\"\""
-                  ]
+                  "parameters": ["Blocks", "\"\""]
                 }
               ]
             },
@@ -43669,12 +43437,7 @@
                   "type": {
                     "value": "SourisSurObjet"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "",
-                    "",
-                    ""
-                  ]
+                  "parameters": ["Blocks", "", "", ""]
                 },
                 {
                   "type": {
@@ -43693,10 +43456,7 @@
                   "type": {
                     "value": "ChangeColor"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "\"43;34;34\""
-                  ]
+                  "parameters": ["Blocks", "\"43;34;34\""]
                 }
               ],
               "events": [
@@ -43707,10 +43467,7 @@
                       "type": {
                         "value": "MouseButtonPressed"
                       },
-                      "parameters": [
-                        "",
-                        "Left"
-                      ]
+                      "parameters": ["", "Left"]
                     }
                   ],
                   "actions": [
@@ -43736,12 +43493,7 @@
                   "type": {
                     "value": "VarObjet"
                   },
-                  "parameters": [
-                    "Blocks",
-                    "Health",
-                    "<=",
-                    "0"
-                  ]
+                  "parameters": ["Blocks", "Health", "<=", "0"]
                 }
               ],
               "actions": [
@@ -43749,30 +43501,19 @@
                   "type": {
                     "value": "Delete"
                   },
-                  "parameters": [
-                    "Blocks",
-                    ""
-                  ]
+                  "parameters": ["Blocks", ""]
                 },
                 {
                   "type": {
                     "value": "ModVarScene"
                   },
-                  "parameters": [
-                    "Inventory[Blocks.ObjectName()]",
-                    "+",
-                    "1"
-                  ]
+                  "parameters": ["Inventory[Blocks.ObjectName()]", "+", "1"]
                 },
                 {
                   "type": {
                     "value": "ModVarGlobal"
                   },
-                  "parameters": [
-                    "ShipStorage[Blocks.ObjectName()]",
-                    "+",
-                    "1"
-                  ]
+                  "parameters": ["ShipStorage[Blocks.ObjectName()]", "+", "1"]
                 }
               ]
             }
@@ -43786,13 +43527,7 @@
               "type": {
                 "value": "CollisionNP"
               },
-              "parameters": [
-                "BlueSpaceship3",
-                "Robot",
-                "",
-                "",
-                "yes"
-              ]
+              "parameters": ["BlueSpaceship3", "Robot", "", "", "yes"]
             }
           ],
           "actions": [
@@ -43800,11 +43535,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"World Map\"",
-                ""
-              ]
+              "parameters": ["", "\"World Map\"", ""]
             }
           ],
           "events": [
@@ -43835,9 +43566,7 @@
                           "type": {
                             "value": "DepartScene"
                           },
-                          "parameters": [
-                            ""
-                          ]
+                          "parameters": [""]
                         }
                       ],
                       "actions": [],
@@ -43857,10 +43586,7 @@
                           "type": {
                             "value": "KeyPressed"
                           },
-                          "parameters": [
-                            "",
-                            "i"
-                          ]
+                          "parameters": ["", "i"]
                         },
                         {
                           "type": {
@@ -43878,11 +43604,7 @@
                               "type": {
                                 "value": "ObjectVariableAsBoolean"
                               },
-                              "parameters": [
-                                "InventoryBack",
-                                "Hidden",
-                                "True"
-                              ]
+                              "parameters": ["InventoryBack", "Hidden", "True"]
                             }
                           ],
                           "actions": [
@@ -43890,11 +43612,7 @@
                               "type": {
                                 "value": "MettreY"
                               },
-                              "parameters": [
-                                "InventoryBack",
-                                "=",
-                                "32"
-                              ]
+                              "parameters": ["InventoryBack", "=", "32"]
                             }
                           ]
                         },
@@ -43905,11 +43623,7 @@
                               "type": {
                                 "value": "ObjectVariableAsBoolean"
                               },
-                              "parameters": [
-                                "InventoryBack",
-                                "Hidden",
-                                "False"
-                              ]
+                              "parameters": ["InventoryBack", "Hidden", "False"]
                             }
                           ],
                           "actions": [
@@ -43917,11 +43631,7 @@
                               "type": {
                                 "value": "MettreY"
                               },
-                              "parameters": [
-                                "InventoryBack",
-                                "=",
-                                "-352"
-                              ]
+                              "parameters": ["InventoryBack", "=", "-352"]
                             }
                           ]
                         },
@@ -43933,10 +43643,7 @@
                               "type": {
                                 "value": "ToggleObjectVariableAsBoolean"
                               },
-                              "parameters": [
-                                "InventoryBack",
-                                "Hidden"
-                              ]
+                              "parameters": ["InventoryBack", "Hidden"]
                             }
                           ]
                         }
@@ -44292,9 +43999,7 @@
                   "type": {
                     "value": "DepartScene"
                   },
-                  "parameters": [
-                    ""
-                  ]
+                  "parameters": [""]
                 }
               ],
               "actions": [],
@@ -44326,10 +44031,7 @@
                   "type": {
                     "value": "KeyPressed"
                   },
-                  "parameters": [
-                    "",
-                    "i"
-                  ]
+                  "parameters": ["", "i"]
                 },
                 {
                   "type": {
@@ -44347,11 +44049,7 @@
                       "type": {
                         "value": "ObjectVariableAsBoolean"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "Hidden",
-                        "True"
-                      ]
+                      "parameters": ["InventoryBack", "Hidden", "True"]
                     }
                   ],
                   "actions": [
@@ -44359,11 +44057,7 @@
                       "type": {
                         "value": "MettreY"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "=",
-                        "32"
-                      ]
+                      "parameters": ["InventoryBack", "=", "32"]
                     }
                   ]
                 },
@@ -44374,11 +44068,7 @@
                       "type": {
                         "value": "ObjectVariableAsBoolean"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "Hidden",
-                        "False"
-                      ]
+                      "parameters": ["InventoryBack", "Hidden", "False"]
                     }
                   ],
                   "actions": [
@@ -44386,11 +44076,7 @@
                       "type": {
                         "value": "MettreY"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "=",
-                        "-352"
-                      ]
+                      "parameters": ["InventoryBack", "=", "-352"]
                     }
                   ]
                 },
@@ -44402,10 +44088,7 @@
                       "type": {
                         "value": "ToggleObjectVariableAsBoolean"
                       },
-                      "parameters": [
-                        "InventoryBack",
-                        "Hidden"
-                      ]
+                      "parameters": ["InventoryBack", "Hidden"]
                     }
                   ]
                 }
@@ -45091,10 +44774,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "World_Map_Button",
-                ""
-              ]
+              "parameters": ["World_Map_Button", ""]
             }
           ],
           "actions": [
@@ -45102,11 +44782,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"World Map\"",
-                ""
-              ]
+              "parameters": ["", "\"World Map\"", ""]
             }
           ]
         },
@@ -45117,10 +44793,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "Factory_Button",
-                ""
-              ]
+              "parameters": ["Factory_Button", ""]
             }
           ],
           "actions": [
@@ -45128,11 +44801,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"Factory\"",
-                ""
-              ]
+              "parameters": ["", "\"Factory\"", ""]
             }
           ]
         },
@@ -46567,10 +46236,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "Main_Menu_Button",
-                ""
-              ]
+              "parameters": ["Main_Menu_Button", ""]
             }
           ],
           "actions": [
@@ -46578,11 +46244,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"Main Menu\"",
-                ""
-              ]
+              "parameters": ["", "\"Main Menu\"", ""]
             }
           ]
         },
@@ -46593,10 +46255,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "World_Map_Button",
-                ""
-              ]
+              "parameters": ["World_Map_Button", ""]
             }
           ],
           "actions": [
@@ -46604,11 +46263,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"World Map\"",
-                ""
-              ]
+              "parameters": ["", "\"World Map\"", ""]
             }
           ]
         },
@@ -46619,10 +46274,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "resources_button",
-                ""
-              ]
+              "parameters": ["resources_button", ""]
             }
           ],
           "actions": [
@@ -46630,141 +46282,85 @@
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.alumina",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.alumina", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.carbonate",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.carbonate", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.copper",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.copper", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.feldspar",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.feldspar", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.iron",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.iron", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.lime",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.lime", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.magnesia",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.magnesia", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.organic_material",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.organic_material", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.potassium_oxide",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.potassium_oxide", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.quartz",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.quartz", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.silica",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.silica", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.soda",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.soda", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.titania",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.titania", "+", "1000000"]
             },
             {
               "type": {
                 "value": "ModVarGlobal"
               },
-              "parameters": [
-                "WorldStorage.cobalt",
-                "+",
-                "1000000"
-              ]
+              "parameters": ["WorldStorage.cobalt", "+", "1000000"]
             }
           ]
         }
@@ -47383,10 +46979,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "FirstMap",
-                ""
-              ]
+              "parameters": ["FirstMap", ""]
             }
           ],
           "actions": [
@@ -47394,11 +46987,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"First Map\"",
-                ""
-              ]
+              "parameters": ["", "\"First Map\"", ""]
             }
           ]
         },
@@ -47409,10 +46998,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "SecondMap",
-                ""
-              ]
+              "parameters": ["SecondMap", ""]
             }
           ],
           "actions": [
@@ -47420,11 +47006,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"Second Map\"",
-                ""
-              ]
+              "parameters": ["", "\"Second Map\"", ""]
             }
           ]
         },
@@ -47435,10 +47017,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "Main_Menu_Button",
-                ""
-              ]
+              "parameters": ["Main_Menu_Button", ""]
             }
           ],
           "actions": [
@@ -47446,11 +47025,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"Main Menu\"",
-                ""
-              ]
+              "parameters": ["", "\"Main Menu\"", ""]
             }
           ]
         },
@@ -47461,10 +47036,7 @@
               "type": {
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
-              "parameters": [
-                "Factory_Button",
-                ""
-              ]
+              "parameters": ["Factory_Button", ""]
             }
           ],
           "actions": [
@@ -47472,11 +47044,7 @@
               "type": {
                 "value": "Scene"
               },
-              "parameters": [
-                "",
-                "\"Factory\"",
-                ""
-              ]
+              "parameters": ["", "\"Factory\"", ""]
             }
           ]
         }
@@ -47603,9 +47171,7 @@
         "paste",
         "wear"
       ],
-      "authorIds": [
-        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
-      ],
+      "authorIds": ["IWykYNRvhCZBN3vEgKEbBPOR3Oc2"],
       "dependencies": [],
       "eventsFunctions": [
         {
@@ -47921,10 +47487,7 @@
                       "type": {
                         "value": "Sticker::DefineHelperClasses"
                       },
-                      "parameters": [
-                        "",
-                        ""
-                      ]
+                      "parameters": ["", ""]
                     }
                   ]
                 },
@@ -48201,13 +47764,8 @@
         "identifier": "PanelSpriteButton",
         "name": "gdevelop-extension-store"
       },
-      "tags": [
-        "button",
-        "ui"
-      ],
-      "authorIds": [
-        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
-      ],
+      "tags": ["button", "ui"],
+      "authorIds": ["IWykYNRvhCZBN3vEgKEbBPOR3Oc2"],
       "dependencies": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
@@ -48265,12 +47823,7 @@
                           "type": {
                             "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
                           },
-                          "parameters": [
-                            "Object",
-                            "Behavior",
-                            "=",
-                            "\"Idle\""
-                          ]
+                          "parameters": ["Object", "Behavior", "=", "\"Idle\""]
                         }
                       ]
                     },
@@ -48303,11 +47856,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::SetPropertyMouseIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "no"
-                              ]
+                              "parameters": ["Object", "Behavior", "no"]
                             }
                           ]
                         },
@@ -48318,10 +47867,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::PropertyShouldCheckHovering"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior"
-                              ]
+                              "parameters": ["Object", "Behavior"]
                             },
                             {
                               "type": {
@@ -48339,11 +47885,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::SetPropertyMouseIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "yes"
-                              ]
+                              "parameters": ["Object", "Behavior", "yes"]
                             }
                           ]
                         },
@@ -48367,11 +47909,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::SetPropertyTouchIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "no"
-                              ]
+                              "parameters": ["Object", "Behavior", "no"]
                             }
                           ]
                         },
@@ -48382,12 +47920,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::PropertyTouchId"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "!=",
-                                "0"
-                              ]
+                              "parameters": ["Object", "Behavior", "!=", "0"]
                             },
                             {
                               "type": {
@@ -48405,11 +47938,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::SetPropertyTouchIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "yes"
-                              ]
+                              "parameters": ["Object", "Behavior", "yes"]
                             }
                           ]
                         }
@@ -48432,9 +47961,7 @@
                               "type": {
                                 "value": "HasAnyTouchOrMouseStarted"
                               },
-                              "parameters": [
-                                ""
-                              ]
+                              "parameters": [""]
                             }
                           ],
                           "actions": [
@@ -48442,12 +47969,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::SetPropertyIndex"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "=",
-                                "0"
-                              ]
+                              "parameters": ["Object", "Behavior", "=", "0"]
                             }
                           ],
                           "events": [
@@ -48586,10 +48108,7 @@
                                 "inverted": true,
                                 "value": "PanelSpriteButton::ButtonFSM::PropertyMouseIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior"
-                              ]
+                              "parameters": ["Object", "Behavior"]
                             },
                             {
                               "type": {
@@ -48624,10 +48143,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::PropertyMouseIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior"
-                              ]
+                              "parameters": ["Object", "Behavior"]
                             },
                             {
                               "type": {
@@ -48663,10 +48179,7 @@
                                 "inverted": true,
                                 "value": "PanelSpriteButton::ButtonFSM::PropertyTouchIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior"
-                              ]
+                              "parameters": ["Object", "Behavior"]
                             },
                             {
                               "type": {
@@ -48701,10 +48214,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::PropertyTouchIsInside"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior"
-                              ]
+                              "parameters": ["Object", "Behavior"]
                             },
                             {
                               "type": {
@@ -48762,12 +48272,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::ButtonFSM::SetPropertyTouchId"
                               },
-                              "parameters": [
-                                "Object",
-                                "Behavior",
-                                "=",
-                                "0"
-                              ]
+                              "parameters": ["Object", "Behavior", "=", "0"]
                             }
                           ],
                           "events": [
@@ -48880,11 +48385,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::ResetState"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        ""
-                      ]
+                      "parameters": ["Object", "Behavior", ""]
                     }
                   ]
                 }
@@ -48920,23 +48421,13 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::SetPropertyState"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "\"Idle\""
-                      ]
+                      "parameters": ["Object", "Behavior", "=", "\"Idle\""]
                     },
                     {
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::SetPropertyTouchId"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "0"
-                      ]
+                      "parameters": ["Object", "Behavior", "=", "0"]
                     }
                   ]
                 }
@@ -48970,12 +48461,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::PropertyState"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "\"Idle\""
-                      ]
+                      "parameters": ["Object", "Behavior", "=", "\"Idle\""]
                     }
                   ],
                   "actions": [
@@ -48983,9 +48469,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -49019,12 +48503,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::PropertyState"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "\"Validated\""
-                      ]
+                      "parameters": ["Object", "Behavior", "=", "\"Validated\""]
                     }
                   ],
                   "actions": [
@@ -49032,9 +48511,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -49068,12 +48545,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::PropertyState"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "\"Hovered\""
-                      ]
+                      "parameters": ["Object", "Behavior", "=", "\"Hovered\""]
                     }
                   ],
                   "actions": [
@@ -49081,9 +48553,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -49117,12 +48587,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::PropertyState"
                       },
-                      "parameters": [
-                        "Object",
-                        "Behavior",
-                        "=",
-                        "\"Hovered\""
-                      ]
+                      "parameters": ["Object", "Behavior", "=", "\"Hovered\""]
                     }
                   ],
                   "actions": [
@@ -49130,9 +48595,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 },
@@ -49156,9 +48619,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -49205,9 +48666,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -49254,9 +48713,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -49291,9 +48748,7 @@
                       "type": {
                         "value": "SetReturnNumber"
                       },
-                      "parameters": [
-                        "Object.Behavior::PropertyTouchId()"
-                      ]
+                      "parameters": ["Object.Behavior::PropertyTouchId()"]
                     }
                   ]
                 }
@@ -49421,63 +48876,37 @@
                       "type": {
                         "value": "Create"
                       },
-                      "parameters": [
-                        "",
-                        "Idle",
-                        "0",
-                        "0",
-                        ""
-                      ]
+                      "parameters": ["", "Idle", "0", "0", ""]
                     },
                     {
                       "type": {
                         "value": "Create"
                       },
-                      "parameters": [
-                        "",
-                        "Hovered",
-                        "0",
-                        "0",
-                        ""
-                      ]
+                      "parameters": ["", "Hovered", "0", "0", ""]
                     },
                     {
                       "type": {
                         "value": "Create"
                       },
-                      "parameters": [
-                        "",
-                        "Pressed",
-                        "0",
-                        "0",
-                        ""
-                      ]
+                      "parameters": ["", "Pressed", "0", "0", ""]
                     },
                     {
                       "type": {
                         "value": "Cache"
                       },
-                      "parameters": [
-                        "Hovered"
-                      ]
+                      "parameters": ["Hovered"]
                     },
                     {
                       "type": {
                         "value": "Cache"
                       },
-                      "parameters": [
-                        "Pressed"
-                      ]
+                      "parameters": ["Pressed"]
                     },
                     {
                       "type": {
                         "value": "ChangePlan"
                       },
-                      "parameters": [
-                        "Hovered",
-                        "=",
-                        "1"
-                      ]
+                      "parameters": ["Hovered", "=", "1"]
                     }
                   ]
                 },
@@ -49501,41 +48930,25 @@
                       "type": {
                         "value": "Create"
                       },
-                      "parameters": [
-                        "",
-                        "Label",
-                        "0",
-                        "0",
-                        ""
-                      ]
+                      "parameters": ["", "Label", "0", "0", ""]
                     },
                     {
                       "type": {
                         "value": "ChangePlan"
                       },
-                      "parameters": [
-                        "Label",
-                        "=",
-                        "2"
-                      ]
+                      "parameters": ["Label", "=", "2"]
                     },
                     {
                       "type": {
                         "value": "TextObject::SetWrapping"
                       },
-                      "parameters": [
-                        "Label",
-                        "yes"
-                      ]
+                      "parameters": ["Label", "yes"]
                     },
                     {
                       "type": {
                         "value": "PanelSpriteButton::PanelSpriteButton::CenterLabel"
                       },
-                      "parameters": [
-                        "Object",
-                        ""
-                      ]
+                      "parameters": ["Object", ""]
                     }
                   ]
                 }
@@ -49579,10 +48992,7 @@
                       "type": {
                         "value": "PanelSpriteButton::PanelSpriteButton::CenterLabel"
                       },
-                      "parameters": [
-                        "Object",
-                        ""
-                      ]
+                      "parameters": ["Object", ""]
                     }
                   ]
                 }
@@ -49631,10 +49041,7 @@
                           "type": {
                             "value": "PanelSpriteButton::PanelSpriteButton::IsIdle"
                           },
-                          "parameters": [
-                            "Object",
-                            "ButtonFSM"
-                          ]
+                          "parameters": ["Object", "ButtonFSM"]
                         },
                         {
                           "type": {
@@ -49658,18 +49065,13 @@
                           "type": {
                             "value": "Montre"
                           },
-                          "parameters": [
-                            "Idle",
-                            ""
-                          ]
+                          "parameters": ["Idle", ""]
                         },
                         {
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Pressed"
-                          ]
+                          "parameters": ["Pressed"]
                         }
                       ],
                       "events": [
@@ -49680,19 +49082,13 @@
                               "type": {
                                 "value": "Visible"
                               },
-                              "parameters": [
-                                "Hovered"
-                              ]
+                              "parameters": ["Hovered"]
                             },
                             {
                               "type": {
                                 "value": "PanelSpriteButton::PanelSpriteButton::PropertyHoveredFadeOutDuration"
                               },
-                              "parameters": [
-                                "Object",
-                                ">",
-                                "0"
-                              ]
+                              "parameters": ["Object", ">", "0"]
                             }
                           ],
                           "actions": [
@@ -49719,11 +49115,7 @@
                               "type": {
                                 "value": "PanelSpriteButton::PanelSpriteButton::PropertyHoveredFadeOutDuration"
                               },
-                              "parameters": [
-                                "Object",
-                                "=",
-                                "0"
-                              ]
+                              "parameters": ["Object", "=", "0"]
                             }
                           ],
                           "actions": [
@@ -49731,9 +49123,7 @@
                               "type": {
                                 "value": "Cache"
                               },
-                              "parameters": [
-                                "Hovered"
-                              ]
+                              "parameters": ["Hovered"]
                             }
                           ]
                         }
@@ -49746,11 +49136,7 @@
                           "type": {
                             "value": "PanelSpriteObject::Opacity"
                           },
-                          "parameters": [
-                            "Hovered",
-                            "=",
-                            "0"
-                          ]
+                          "parameters": ["Hovered", "=", "0"]
                         }
                       ],
                       "actions": [
@@ -49758,19 +49144,13 @@
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Hovered"
-                          ]
+                          "parameters": ["Hovered"]
                         },
                         {
                           "type": {
                             "value": "PanelSpriteObject::SetOpacity"
                           },
-                          "parameters": [
-                            "Hovered",
-                            "=",
-                            "255"
-                          ]
+                          "parameters": ["Hovered", "=", "255"]
                         }
                       ]
                     },
@@ -49781,10 +49161,7 @@
                           "type": {
                             "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
                           },
-                          "parameters": [
-                            "Object",
-                            "ButtonFSM"
-                          ]
+                          "parameters": ["Object", "ButtonFSM"]
                         },
                         {
                           "type": {
@@ -49808,46 +49185,31 @@
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Idle"
-                          ]
+                          "parameters": ["Idle"]
                         },
                         {
                           "type": {
                             "value": "Montre"
                           },
-                          "parameters": [
-                            "Hovered",
-                            ""
-                          ]
+                          "parameters": ["Hovered", ""]
                         },
                         {
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Pressed"
-                          ]
+                          "parameters": ["Pressed"]
                         },
                         {
                           "type": {
                             "value": "Tween::RemoveTween"
                           },
-                          "parameters": [
-                            "Hovered",
-                            "Tween",
-                            "\"Fadeout\""
-                          ]
+                          "parameters": ["Hovered", "Tween", "\"Fadeout\""]
                         },
                         {
                           "type": {
                             "value": "PanelSpriteObject::SetOpacity"
                           },
-                          "parameters": [
-                            "Hovered",
-                            "=",
-                            "255"
-                          ]
+                          "parameters": ["Hovered", "=", "255"]
                         }
                       ]
                     },
@@ -49858,10 +49220,7 @@
                           "type": {
                             "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
                           },
-                          "parameters": [
-                            "Object",
-                            "ButtonFSM"
-                          ]
+                          "parameters": ["Object", "ButtonFSM"]
                         },
                         {
                           "type": {
@@ -49885,26 +49244,19 @@
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Idle"
-                          ]
+                          "parameters": ["Idle"]
                         },
                         {
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Hovered"
-                          ]
+                          "parameters": ["Hovered"]
                         },
                         {
                           "type": {
                             "value": "Montre"
                           },
-                          "parameters": [
-                            "Pressed",
-                            ""
-                          ]
+                          "parameters": ["Pressed", ""]
                         }
                       ]
                     },
@@ -49915,10 +49267,7 @@
                           "type": {
                             "value": "PanelSpriteButton::PanelSpriteButton::IsFocused"
                           },
-                          "parameters": [
-                            "Object",
-                            "ButtonFSM"
-                          ]
+                          "parameters": ["Object", "ButtonFSM"]
                         },
                         {
                           "type": {
@@ -49942,26 +49291,19 @@
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Idle"
-                          ]
+                          "parameters": ["Idle"]
                         },
                         {
                           "type": {
                             "value": "Montre"
                           },
-                          "parameters": [
-                            "Hovered",
-                            ""
-                          ]
+                          "parameters": ["Hovered", ""]
                         },
                         {
                           "type": {
                             "value": "Cache"
                           },
-                          "parameters": [
-                            "Pressed"
-                          ]
+                          "parameters": ["Pressed"]
                         }
                       ]
                     }
@@ -50026,12 +49368,7 @@
                           "type": {
                             "value": "ModVarObjet"
                           },
-                          "parameters": [
-                            "Idle",
-                            "Width",
-                            "=",
-                            "Object.Width()"
-                          ]
+                          "parameters": ["Idle", "Width", "=", "Object.Width()"]
                         },
                         {
                           "type": {
@@ -50048,11 +49385,7 @@
                           "type": {
                             "value": "PanelSpriteButton::Scale"
                           },
-                          "parameters": [
-                            "Object",
-                            "=",
-                            "1"
-                          ]
+                          "parameters": ["Object", "=", "1"]
                         },
                         {
                           "type": {
@@ -50078,10 +49411,7 @@
                           "type": {
                             "value": "PanelSpriteButton::PanelSpriteButton::CenterLabel"
                           },
-                          "parameters": [
-                            "Object",
-                            ""
-                          ]
+                          "parameters": ["Object", ""]
                         }
                       ]
                     }
@@ -50128,11 +49458,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::IsIdle"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        ""
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", ""]
                     }
                   ],
                   "actions": [
@@ -50140,9 +49466,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -50171,11 +49495,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::IsClicked"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        ""
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", ""]
                     }
                   ],
                   "actions": [
@@ -50183,9 +49503,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -50214,11 +49532,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::IsHovered"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        ""
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", ""]
                     }
                   ],
                   "actions": [
@@ -50226,9 +49540,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -50257,11 +49569,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::IsFocused"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        ""
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", ""]
                     }
                   ],
                   "actions": [
@@ -50269,9 +49577,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -50300,11 +49606,7 @@
                       "type": {
                         "value": "PanelSpriteButton::ButtonFSM::IsPressed"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        ""
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", ""]
                     }
                   ],
                   "actions": [
@@ -50312,9 +49614,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -50354,10 +49654,7 @@
                       "type": {
                         "value": "PanelSpriteButton::PanelSpriteButton::CenterLabel"
                       },
-                      "parameters": [
-                        "Object",
-                        ""
-                      ]
+                      "parameters": ["Object", ""]
                     }
                   ]
                 }
@@ -50392,9 +49689,7 @@
                       "type": {
                         "value": "SetReturnString"
                       },
-                      "parameters": [
-                        "Label.String()"
-                      ]
+                      "parameters": ["Label.String()"]
                     }
                   ]
                 }
@@ -50519,10 +49814,7 @@
                       "type": {
                         "value": "PanelSpriteButton::PanelSpriteButton::IsPressed"
                       },
-                      "parameters": [
-                        "Object",
-                        ""
-                      ]
+                      "parameters": ["Object", ""]
                     }
                   ],
                   "actions": [
@@ -50578,9 +49870,7 @@
                       "type": {
                         "value": "GetArgumentAsBoolean"
                       },
-                      "parameters": [
-                        "\"ShouldActivate\""
-                      ]
+                      "parameters": ["\"ShouldActivate\""]
                     }
                   ],
                   "actions": [
@@ -50588,11 +49878,7 @@
                       "type": {
                         "value": "ActivateBehavior"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        "yes"
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", "yes"]
                     }
                   ]
                 },
@@ -50604,9 +49890,7 @@
                         "inverted": true,
                         "value": "GetArgumentAsBoolean"
                       },
-                      "parameters": [
-                        "\"ShouldActivate\""
-                      ]
+                      "parameters": ["\"ShouldActivate\""]
                     }
                   ],
                   "actions": [
@@ -50614,11 +49898,7 @@
                       "type": {
                         "value": "ActivateBehavior"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM",
-                        "no"
-                      ]
+                      "parameters": ["Idle", "ButtonFSM", "no"]
                     }
                   ]
                 }
@@ -50652,10 +49932,7 @@
                       "type": {
                         "value": "BehaviorActivated"
                       },
-                      "parameters": [
-                        "Idle",
-                        "ButtonFSM"
-                      ]
+                      "parameters": ["Idle", "ButtonFSM"]
                     }
                   ],
                   "actions": [
@@ -50663,9 +49940,7 @@
                       "type": {
                         "value": "SetReturnBoolean"
                       },
-                      "parameters": [
-                        "True"
-                      ]
+                      "parameters": ["True"]
                     }
                   ]
                 }
@@ -50697,9 +49972,7 @@
               "label": "Left padding",
               "description": "",
               "group": "Padding",
-              "extraInformation": [
-                "Label"
-              ],
+              "extraInformation": ["Label"],
               "name": "LeftPadding"
             },
             {
@@ -50708,9 +49981,7 @@
               "label": "Right padding",
               "description": "",
               "group": "Padding",
-              "extraInformation": [
-                "Label"
-              ],
+              "extraInformation": ["Label"],
               "name": "RightPadding"
             },
             {
@@ -50719,9 +49990,7 @@
               "label": "Top padding",
               "description": "",
               "group": "Padding",
-              "extraInformation": [
-                "Label"
-              ],
+              "extraInformation": ["Label"],
               "name": "TopPadding"
             },
             {
@@ -50730,9 +49999,7 @@
               "label": "Bottom padding",
               "description": "",
               "group": "Padding",
-              "extraInformation": [
-                "Label"
-              ],
+              "extraInformation": ["Label"],
               "name": "BottomPadding"
             },
             {

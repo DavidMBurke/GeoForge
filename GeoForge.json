@@ -44720,7 +44720,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -44728,7 +44727,7 @@
             {
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
-                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese\", \"Cobalt\", \"Shale\", \"Chalcopyrite\", \"Limestone\"]",
+                "const blockNames = [\"Dirt\", \"Clay\", \"Sand\", \"Basalt\", \"Diorite\", \"Manganese\", \"Cobalt\", \"Shale\", \"Chalcopyrite\", \"Limestone\", \"Granite\"]",
                 "var blocks = [];",
                 "blockNames.map((name) => blocks = blocks.concat(runtimeScene.getObjects(name)))",
                 "",

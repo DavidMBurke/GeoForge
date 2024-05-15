@@ -984,6 +984,45 @@
         "name": "Plates_tect2_en.svg.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "SalmonLikeTheFish - Glacier.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "SalmonLikeTheFish - Glacier.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "dirt drill.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "dirt drill.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "drill.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "drill.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "black.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -3622,6 +3661,11 @@
       "type": "structure",
       "children": [
         {
+          "name": "Main menu intro",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "folded": true,
           "name": "Map-1-1",
           "type": "boolean",
@@ -3653,6 +3697,21 @@
         {
           "folded": true,
           "name": "Map-1-5b",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-1-5c",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-1-5d",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-1-5e",
           "type": "boolean",
           "value": false
         },
@@ -3695,8 +3754,23 @@
         },
         {
           "name": "Map-2-3c",
-          "type": "string",
-          "value": ""
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-2-3d",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-2-3e",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Map-2-3f",
+          "type": "boolean",
+          "value": false
         },
         {
           "folded": true,
@@ -3728,9 +3802,867 @@
       "name": "CanPressZ",
       "type": "boolean",
       "value": true
+    },
+    {
+      "name": "Variable2",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Main_32Menu",
+      "name": "Main Menu",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.2386775827025788,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "layer": "",
+          "name": "World_Map_Button",
+          "persistentUuid": "a759db8b-8ed1-4188-91ea-4cbd61240663",
+          "width": 277,
+          "x": 1045,
+          "y": 440,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "EnviroMiners",
+          "persistentUuid": "b7805981-a292-4056-b47f-5bc250490149",
+          "width": 0,
+          "x": 866,
+          "y": 62,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "layer": "",
+          "name": "Factory_Button",
+          "persistentUuid": "2bee3557-f23a-41b6-bcfb-91840369a75a",
+          "width": 276,
+          "x": 1044,
+          "y": 537,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1237,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Background2",
+          "persistentUuid": "9cc64e4f-def6-49d9-ac69-e8abd0db68da",
+          "width": 1973,
+          "x": -180,
+          "y": -286,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1133,
+          "keepRatio": true,
+          "layer": "popup",
+          "name": "NewSprite",
+          "persistentUuid": "ed8779e0-d622-4f5a-9ad9-3851ebbc5562",
+          "width": 1862,
+          "x": -129,
+          "y": -239,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 665,
+          "keepRatio": true,
+          "layer": "popup",
+          "name": "Intro_text",
+          "persistentUuid": "3624c30f-88b8-442c-bfa9-24845830efbf",
+          "width": 1426,
+          "x": 32,
+          "y": 32,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Barren Earth.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 800,
+                            "y": 0
+                          },
+                          {
+                            "x": 800,
+                            "y": 400
+                          },
+                          {
+                            "x": 0,
+                            "y": 400
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "World_Map_Button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "World Map",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "World Map",
+                "font": "CarterOne-Regular.ttf",
+                "textAlignment": "center",
+                "characterSize": 40,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "EnviroMiners",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "ENVIROMINERS",
+          "font": "CarterOne-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 75,
+          "color": {
+            "b": 17,
+            "g": 146,
+            "r": 27
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "8;155;21",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "126;211;33",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "ENVIROMINERS",
+            "font": "CarterOne-Regular.ttf",
+            "textAlignment": "left",
+            "characterSize": 75,
+            "color": "27;146;17"
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "Factory_Button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Hovered.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Idle.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Factory",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Factory",
+                "font": "CarterOne-Regular.ttf",
+                "textAlignment": "center",
+                "characterSize": 40,
+                "color": "255;255;255"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Floating Out Button Dark Blue_Pressed.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Environminers Background.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1792,
+                            "y": 0
+                          },
+                          {
+                            "x": 1792,
+                            "y": 1024
+                          },
+                          {
+                            "x": 0,
+                            "y": 1024
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "black.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 900,
+                            "y": 0
+                          },
+                          {
+                            "x": 900,
+                            "y": 600
+                          },
+                          {
+                            "x": 0,
+                            "y": 600
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Intro_text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "The year is 2389. One and a half centuries ago, the Earth became uninhabitable to humanity and most of life due to pollution, unsustainable resource harvesting, and climate change due to greenhouse gasses.\n\nHumanity was able to continue, living beneath the ground on Lunar colonies, but life on Earth has become a distant memory.\n\nIt's up to you to change that.\n\nHosting a fully cyborg, self-sufficient body, you’ve been sent on a mission to return to Earth and lead the restoration efforts, in the hopes we can return it to the thriving home for life it once was, and perhaps even return humanity to our home planet.\n\nInitially, you will be rebuilding the ancient factories that humans attempted to use to save the planet. Many of these will be outdated and require harmful materials to run such as fossil fuels, but you will work quickly to upgrade them to cleaner and more sustainable technologies and methodologies.\n\nGood luck, we're all counting on you.\n\n\nPress Z to close this message.",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 24,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "The year is 2389. One and a half centuries ago, the Earth became uninhabitable to humanity and most of life due to pollution, unsustainable resource harvesting, and climate change due to greenhouse gasses.\n\nHumanity was able to continue, living beneath the ground on Lunar colonies, but life on Earth has become a distant memory.\n\nIt's up to you to change that.\n\nHosting a fully cyborg, self-sufficient body, you’ve been sent on a mission to return to Earth and lead the restoration efforts, in the hopes we can return it to the thriving home for life it once was, and perhaps even return humanity to our home planet.\n\nInitially, you will be rebuilding the ancient factories that humans attempted to use to save the planet. Many of these will be outdated and require harmful materials to run such as fossil fuels, but you will work quickly to upgrade them to cleaner and more sustainable technologies and methodologies.\n\nGood luck, we're all counting on you.\n\n\nPress Z to close this message.",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 24,
+            "color": "255;255;255"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Background"
+          },
+          {
+            "objectName": "Background2"
+          },
+          {
+            "objectName": "World_Map_Button"
+          },
+          {
+            "objectName": "Factory_Button"
+          },
+          {
+            "objectName": "EnviroMiners"
+          },
+          {
+            "objectName": "NewSprite"
+          },
+          {
+            "objectName": "Intro_text"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "SalmonLikeTheFish - Glacier.mp3",
+                "",
+                "40",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "World_Map_Button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"World Map\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "Factory_Button",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Factory\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "z"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "NewSprite"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Intro_text"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Main menu intro\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Main menu intro\"]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "NewSprite"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Intro_text"
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "popup",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
+          "name": "PlatformerObject",
+          "type": "PlatformBehavior::PlatformerObjectBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
@@ -3751,7 +4683,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5653158055126366,
+        "zoomFactor": 0.7130377630690473,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3926,13 +4858,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 544,
+          "height": 640,
           "layer": "Background",
           "name": "Background",
           "persistentUuid": "25f144a7-52ca-436b-a92d-537e77e54653",
-          "width": 1408,
+          "width": 1664,
           "x": 0,
-          "y": -32,
+          "y": -128,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -15625,14 +16557,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "9df2259e-f726-43ea-8bde-cf46792b67fe",
-          "width": 0,
-          "x": 1535,
+          "width": 32,
+          "x": 1536,
           "y": 320,
           "zOrder": 32,
           "numberProperties": [],
@@ -15657,14 +16590,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "1f03e3c4-131c-41df-b50f-f602a277a15e",
-          "width": 0,
-          "x": 1567,
+          "width": 32,
+          "x": 1568,
           "y": 320,
           "zOrder": 32,
           "numberProperties": [],
@@ -15705,15 +16639,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "a69d3e3e-8d2b-420e-9f42-640bcd60a03d",
-          "width": 0,
+          "width": 32,
           "x": 1472,
-          "y": 319,
+          "y": 320,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -15881,15 +16816,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
           "name": "Clay",
           "persistentUuid": "35a9b139-e947-4fde-9c4d-4de81e2ea10c",
-          "width": 0,
-          "x": 1503,
-          "y": 319,
+          "width": 32,
+          "x": 1504,
+          "y": 320,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -16737,8 +17673,8 @@
           "layer": "",
           "name": "water",
           "persistentUuid": "d5a66317-4c82-4045-a149-0a2c99e87b15",
-          "width": 512,
-          "x": 1568,
+          "width": 704,
+          "x": 1376,
           "y": 352,
           "zOrder": 0,
           "numberProperties": [],
@@ -19944,6 +20880,18 @@
               "parameters": [
                 "Popup_Text"
               ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "SalmonLikeTheFish - Glacier.mp3",
+                "",
+                "",
+                ""
+              ]
             }
           ]
         },
@@ -20515,6 +21463,198 @@
                     "value": "GlobalVariableAsBoolean"
                   },
                   "parameters": [
+                    "Popups[\"Map-1-5c\"]",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Inventory.Shale",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Popup_Text",
+                    "Text",
+                    "=",
+                    "\"You have found Shale!\n\nShale is a soft, brittle, fine-grained, and easily eroded sedimentary rock formed from mineral-rich silt that was deposited in an aquatic environment.\n\nShale can hold organic material and in some cases contains natural gas or oil.\n\nPress Z to close this message\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Popup_Text",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Popup_Panel",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Popups[\"Map-1-5c\"]",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Popups[\"Map-1-5d\"]",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Inventory.Granite",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Popup_Text",
+                    "Text",
+                    "=",
+                    "\"You've found granite! Granite is a plutonic rock, meaning it solidified deep in the Earth's mantle before rising to the surface. It is found throughout the continental crust and consists of coarse grains of quartz, potassium feldspar, and sodium feldspar.\n\nYou may find some useful minerals from this, but you might want to upgrade your drill first or you'll be here a while.\n\nPress Z to close this message.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Popup_Text",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Popup_Panel",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Popups[\"Map-1-5d\"]",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Popups[\"Map-1-5e\"]",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "Inventory.Chalcopyrite",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Popup_Text",
+                    "Text",
+                    "=",
+                    "\"You've found Chalcopyrite! This is a copper-iron-sulfide mineral, and the most abundant Copper ore on Earth. This will make a great source of copper.\n\nYou REALLY might want to upgrade your drill before you're looking for copper though.\n\nPress Z to close this message.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Popup_Text",
+                    "Text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Popup_Panel",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Popups[\"Map-1-5e\"]",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
                     "Popups[\"Map-1-5a\"]",
                     "True"
                   ]
@@ -20567,7 +21707,7 @@
                     "Popup_Text",
                     "Text",
                     "=",
-                    "\"This should be enough materials! Let's return to the ship for now.\n\nPress Z to close this message\""
+                    "\"This should be enough materials! You can return to the ship to upgrade your drill, or continue gathering resources.\n\nPress Z to close this message\""
                   ]
                 },
                 {
@@ -20840,7 +21980,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Mining",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -20921,6 +22060,33 @@
                         "Health",
                         "-",
                         "Upgrades.Drill.Mine_Strength[Upgrades.Drill.Level]* TimeDelta()"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "drill.wav",
+                            "",
+                            "20",
+                            "1"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -21634,6 +22800,32 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "y"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"First Map\"",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -21977,13 +23169,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 736,
+          "height": 864,
           "layer": "Background",
           "name": "Background",
           "persistentUuid": "25f144a7-52ca-436b-a92d-537e77e54653",
-          "width": 1408,
+          "width": 1696,
           "x": 0,
-          "y": 0,
+          "y": -128,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -44720,6 +45912,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Mining Logic",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -44825,6 +46018,18 @@
                 "Text",
                 "=",
                 "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "SalmonLikeTheFish - Glacier.mp3",
+                "",
+                "",
+                ""
               ]
             }
           ]
@@ -45160,7 +46365,7 @@
                 "Popup_Text",
                 "Text",
                 "=",
-                "\"Up until now, we have relied on fossil fuels found in Shale to power our generators. However, this is not sustainable in the long term. We will need to upgrade our factories to use clean energy such as solar and wind, which will require the use of some new materials. Because this location is on a tectonic plate boundary, we're much likely to find some of the more rare metals we need!\n\nMost of the crust is made of silica because it's less dense than most metals in magma so it rises to the surface and solidifies, but near tectonic plate boundaries like these, denser magma containing heavy metals can be brought to the surface through volcanic activity. \n\""
+                "\"Up until now, we have relied on fossil fuels to power our generators. However, this is not sustainable in the long term. We will need to upgrade our factories to use clean energy such as solar and wind, which will require the use of some new materials. Because this location is on a tectonic plate boundary, we're much likely to find some of the more rare metals we need!\n\nMost of the crust is made of silica because it's less dense than most metals in magma so it rises to the surface and solidifies, but near tectonic plate boundaries like these, denser magma containing heavy metals can be brought to the surface through volcanic activity. \n\""
               ]
             },
             {
@@ -45243,7 +46448,7 @@
                 "Popup_Text",
                 "Text",
                 "=",
-                "\"We should look for Cobalt and Copper so that we can upgrade our equipment and factories. These metals are often found together near tectonic plate boundaries. We should also avoid mining shale, so we don't release trapped carbon and pollutants into the environment.\n\nWhile these minerals will also be useful in generating batteries, which we will need for storing energy as we transition away from our use of fossil fuels to cleaner energy sources, it is important to be mindful that harvesting these metals still has an environmental impact as well. Restoring the Earth will require a careful balance of using what we need to progress while transitioning to fully sustainable practices. Consider as you complete your mission other possibilities for storing energy.\""
+                "\"We should look for Cobalt and Copper so that we can upgrade our equipment and factories. These metals are often found together near tectonic plate boundaries. We should also avoid mining the shale here, so we don't release trapped carbon and pollutants into the environment.\n\nWhile these minerals will also be useful in generating batteries, which we will need for storing energy as we transition away from our use of fossil fuels to cleaner energy sources, it is important to be mindful that harvesting these metals still has an environmental impact as well. Restoring the Earth will require a careful balance of using what we need to progress while transitioning to fully sustainable practices. Consider as you complete your mission other possibilities for storing energy.\""
               ]
             },
             {
@@ -45473,7 +46678,7 @@
                 "Popup_Text",
                 "Text",
                 "=",
-                "\"Careful! If you keep mining Shale you may cause an oil spill!\n\nPress Z to close this message.\""
+                "\"Careful! The shale here is part of an oil deposit. If you keep mining Shale you may cause an oil spill!\n\nPress Z to close this message.\""
               ]
             },
             {
@@ -45500,6 +46705,225 @@
               },
               "parameters": [
                 "Popups[\"Map-2-3c\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3d\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Basalt",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"You've found Basalt!\n\nBasalt is a dark-colored, fine-grained rock that forms from cooled lava and is very common in oceanic crust.\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3d\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3e\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Manganese",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"You've found Manganese!\n\nManganese is a grayish metal that is very important in industrial metal alloys and is also used in batteries and some electronics.\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3e\"]",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3f\"]",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "Inventory.Limestone",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-2\"]",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"You've found Limestone!\n\nLimestone is a rock mostly made of calcium carbonate that forms from the remains of marine life like shells and corals. It is often used in building materials and making cement.\n\nPress Z to close this message.\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text"
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Popup_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-2-3f\"]",
                 "True"
               ]
             }
@@ -46792,6 +48216,37 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "y"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Second Map\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -46991,590 +48446,6 @@
       ]
     },
     {
-      "b": 209,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Main_32Menu",
-      "name": "Main Menu",
-      "r": 209,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 209,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.5290357402156839,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 48,
-          "height": 64,
-          "layer": "",
-          "name": "World_Map_Button",
-          "persistentUuid": "a759db8b-8ed1-4188-91ea-4cbd61240663",
-          "width": 277,
-          "x": 840,
-          "y": 522,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "EnviroMiners",
-          "persistentUuid": "b7805981-a292-4056-b47f-5bc250490149",
-          "width": 0,
-          "x": 661,
-          "y": 65,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 48,
-          "height": 64,
-          "layer": "",
-          "name": "Factory_Button",
-          "persistentUuid": "2bee3557-f23a-41b6-bcfb-91840369a75a",
-          "width": 276,
-          "x": 841,
-          "y": 605,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 834,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Background2",
-          "persistentUuid": "9cc64e4f-def6-49d9-ac69-e8abd0db68da",
-          "width": 1374,
-          "x": -65,
-          "y": -24,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Background",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Barren Earth.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 800,
-                            "y": 0
-                          },
-                          {
-                            "x": 800,
-                            "y": 400
-                          },
-                          {
-                            "x": 0,
-                            "y": 400
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
-          "name": "World_Map_Button",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 2,
-            "BottomPadding": 4,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "Floating Out Button Dark Blue_Hovered.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            },
-            "Idle": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "Floating Out Button Dark Blue_Idle.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "World Map",
-              "font": "CarterOne-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 40,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "World Map",
-                "font": "CarterOne-Regular.ttf",
-                "textAlignment": "center",
-                "characterSize": 40,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "Floating Out Button Dark Blue_Pressed.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            }
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": true,
-          "italic": false,
-          "name": "EnviroMiners",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "ENVIROMINERS",
-          "font": "CarterOne-Regular.ttf",
-          "textAlignment": "left",
-          "characterSize": 75,
-          "color": {
-            "b": 17,
-            "g": 146,
-            "r": 27
-          },
-          "content": {
-            "bold": true,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "8;155;21",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "126;211;33",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "ENVIROMINERS",
-            "font": "CarterOne-Regular.ttf",
-            "textAlignment": "left",
-            "characterSize": 75,
-            "color": "27;146;17"
-          }
-        },
-        {
-          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
-          "name": "Factory_Button",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 2,
-            "BottomPadding": 4,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "Floating Out Button Dark Blue_Hovered.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            },
-            "Idle": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "Floating Out Button Dark Blue_Idle.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "Factory",
-              "font": "CarterOne-Regular.ttf",
-              "textAlignment": "center",
-              "characterSize": 40,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "Factory",
-                "font": "CarterOne-Regular.ttf",
-                "textAlignment": "center",
-                "characterSize": 40,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "Floating Out Button Dark Blue_Pressed.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            }
-          }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Background2",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Environminers Background.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 1792,
-                            "y": 0
-                          },
-                          {
-                            "x": 1792,
-                            "y": 1024
-                          },
-                          {
-                            "x": 0,
-                            "y": 1024
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "Background"
-          },
-          {
-            "objectName": "Background2"
-          },
-          {
-            "objectName": "World_Map_Button"
-          },
-          {
-            "objectName": "Factory_Button"
-          },
-          {
-            "objectName": "EnviroMiners"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "World_Map_Button",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"World Map\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-              },
-              "parameters": [
-                "Factory_Button",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Factory\"",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior"
-        },
-        {
-          "name": "PlatformerObject",
-          "type": "PlatformBehavior::PlatformerObjectBehavior"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
-        }
-      ]
-    },
-    {
       "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "Factory",
@@ -47594,7 +48465,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4950840073748892,
+        "zoomFactor": 0.3010461197182464,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -47643,7 +48514,7 @@
           "persistentUuid": "6cee813b-9145-4a63-96c5-5e2135b365c2",
           "width": 256,
           "x": 32,
-          "y": 288,
+          "y": 192,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -47691,7 +48562,7 @@
           "name": "resources",
           "persistentUuid": "08a2ae3d-289b-470e-817a-fbad5b565165",
           "width": 0,
-          "x": 992,
+          "x": 1312,
           "y": 32,
           "zOrder": 6,
           "numberProperties": [],
@@ -47758,7 +48629,7 @@
           "persistentUuid": "8d8b1ff0-d397-41eb-b46f-a74a0ba8c08d",
           "width": 256,
           "x": 352,
-          "y": 288,
+          "y": 192,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -47775,7 +48646,7 @@
           "persistentUuid": "ba55e422-1739-44fb-a72f-e924eb85cd0d",
           "width": 256,
           "x": 672,
-          "y": 288,
+          "y": 192,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -47826,6 +48697,237 @@
           "x": 992,
           "y": 608,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "processing_plant_label",
+          "persistentUuid": "f707afac-9986-4f50-a7f2-4b18ca8af831",
+          "width": 0,
+          "x": 992,
+          "y": 32,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Air_Purification_Plant",
+          "persistentUuid": "8c247f22-13f3-4e82-9d4b-a1b0c6440921",
+          "width": 0,
+          "x": 352,
+          "y": 320,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Water_Purification_Plant",
+          "persistentUuid": "92539082-8c17-43a8-b159-981fa50649ad",
+          "width": 0,
+          "x": 672,
+          "y": 320,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Reforestation_Efforts",
+          "persistentUuid": "f40b83a0-c4f1-47f2-abe9-e3b1f6e8fe38",
+          "width": 0,
+          "x": 960,
+          "y": 320,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Carbon_Capture_Plant",
+          "persistentUuid": "b27fa589-f02b-4f37-b023-38f98ce50b20",
+          "width": 0,
+          "x": 32,
+          "y": 320,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "generic_upgrade_button",
+          "persistentUuid": "7675fa54-13d0-4074-899f-d2355c5c0a70",
+          "width": 256,
+          "x": 992,
+          "y": 192,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "generic_upgrade_button",
+          "persistentUuid": "8934b07f-21f7-4c9e-a1cc-946ce187e9d2",
+          "width": 256,
+          "x": 32,
+          "y": 480,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "generic_upgrade_button",
+          "persistentUuid": "330bdd89-c906-4e9f-af8e-3c1330576a6e",
+          "width": 256,
+          "x": 352,
+          "y": 480,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "generic_upgrade_button",
+          "persistentUuid": "7e76410d-7302-4854-ab03-4ca31b4ae98c",
+          "width": 256,
+          "x": 672,
+          "y": 480,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "generic_upgrade_button",
+          "persistentUuid": "7289c2bd-8af7-4572-91a8-cefdb3b00372",
+          "width": 256,
+          "x": 992,
+          "y": 480,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Layer",
+          "name": "Popup_Panel",
+          "persistentUuid": "212c3174-7533-4a55-8bca-3e77719f6757",
+          "width": 0,
+          "x": 160,
+          "y": 384,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Layer",
+          "name": "Popup_Panel",
+          "persistentUuid": "44fec8d3-cf2b-40d4-82ce-05af540e3a98",
+          "width": 0,
+          "x": 96,
+          "y": 384,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 288,
+          "keepRatio": true,
+          "layer": "Popup",
+          "name": "Popup_Panel",
+          "persistentUuid": "11f2d26f-eddf-4c2d-ac28-7a33403034e4",
+          "width": 1440,
+          "x": 64,
+          "y": 384,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 224,
+          "keepRatio": true,
+          "layer": "Popup",
+          "name": "Popup_Text",
+          "persistentUuid": "66ab0788-7055-4b7c-8769-b81f4f23b7bf",
+          "width": 1376,
+          "x": 96,
+          "y": 416,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -48699,6 +49801,424 @@
               "width": 256
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "processing_plant_label",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Mineral\nProcessing Plant\n",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Mineral\nProcessing Plant\n",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Air_Purification_Plant",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Air Purification Plant\n",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Air Purification Plant\n",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Clean",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Air Purification Plant\n",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Air Purification Plant\n",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Water_Purification_Plant",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Water Purification \nPlant\n",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Water Purification \nPlant\n",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Reforestation_Efforts",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Reforestation Facilities",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Reforestation Facilities",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Carbon_Capture_Plant",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Carbon Capture\nPlant",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Carbon Capture\nPlant",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 30,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "bfab3a269992cf43081e2cb8053c28aaef11f2f9e0d0cbdc00207ea271f69c2c",
+          "name": "generic_upgrade_button",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 16,
+            "RightPadding": 16,
+            "PressedLabelOffsetY": 10,
+            "BottomPadding": 32,
+            "TopPadding": 16,
+            "HoveredFadeOutDuration": 0.25
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Hovered.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Idle": {
+              "bottomMargin": 32,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Idle.png",
+              "tiled": true,
+              "topMargin": 16,
+              "width": 256
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "Upgrade",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 24,
+              "color": {
+                "b": 79,
+                "g": 72,
+                "r": 72
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Upgrade",
+                "font": "",
+                "textAlignment": "center",
+                "characterSize": 24,
+                "color": "72;72;79"
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 16,
+              "height": 106,
+              "leftMargin": 16,
+              "rightMargin": 16,
+              "texture": "Grey Button_Pressed.png",
+              "tiled": true,
+              "topMargin": 32,
+              "width": 256
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "Popup_Panel",
+          "rightMargin": 0,
+          "texture": "TextBox.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonObjectEffectTween",
+              "type": "ButtonStates::ButtonObjectEffectTween",
+              "ButtonFSM": "ButtonFSM",
+              "Effect": "Effect",
+              "EffectName": "Effect",
+              "EffectProperty": "",
+              "IdleValue": 0,
+              "FocusedValue": 0,
+              "PressedValue": 0,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "FadeInDuration": 0.125,
+              "FadeOutDuration": 0.5,
+              "PreviousState": "Idle",
+              "TweenInitialValue": 0,
+              "TweenTargetedValue": 0,
+              "TweenTime": 0,
+              "TweenState": "NoTween",
+              "EffectValue": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Popup_Text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "This is your Factory! Here you can upgrade your robot, and begin building the facilities that we're going to need if we want to restore Earth back to habitability.\nEvery time you return here, the materials you've stored in your ship will automatically be broken down by your Processing Plant. As you upgrade it, it wil become more efficient, giving you more resources per block.\nYour drill determines your mining speed, your arms determine how far away you can reach when mining, and your legs determine how high you can jump.\nAll other upgrades are for restoring the Earth back to a planet full of thriving life. As you research these upgrades, you will gain access to new locations, and you will see the Earth transform before your eyes as pollution clears and greenery comes back to the planet. \n\nPress Z to close this message",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "This is your Factory! Here you can upgrade your robot, and begin building the facilities that we're going to need if we want to restore Earth back to habitability.\nEvery time you return here, the materials you've stored in your ship will automatically be broken down by your Processing Plant. As you upgrade it, it wil become more efficient, giving you more resources per block.\nYour drill determines your mining speed, your arms determine how far away you can reach when mining, and your legs determine how high you can jump.\nAll other upgrades are for restoring the Earth back to a planet full of thriving life. As you research these upgrades, you will gain access to new locations, and you will see the Earth transform before your eyes as pollution clears and greenery comes back to the planet. \n\nPress Z to close this message",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -48732,6 +50252,27 @@
             "objectName": "drill_label"
           },
           {
+            "objectName": "processing_plant_label"
+          },
+          {
+            "objectName": "Air_Purification_Plant"
+          },
+          {
+            "objectName": "Reforestation_Efforts"
+          },
+          {
+            "objectName": "Carbon_Capture_Plant"
+          },
+          {
+            "objectName": "Water_Purification_Plant"
+          },
+          {
+            "objectName": "Popup_Panel"
+          },
+          {
+            "objectName": "Clean"
+          },
+          {
             "objectName": "jump_label"
           },
           {
@@ -48745,6 +50286,12 @@
           },
           {
             "objectName": "level_up_button"
+          },
+          {
+            "objectName": "generic_upgrade_button"
+          },
+          {
+            "objectName": "Popup_Text"
           }
         ]
       },
@@ -49348,6 +50895,121 @@
                 "1"
               ]
             }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Upgrades.Drill.Level",
+                    ">",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Upgrades.Drill.Level",
+                    "=",
+                    "4"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Upgrades.Jump.Level",
+                    ">",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Upgrades.Jump.Level",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobal"
+                  },
+                  "parameters": [
+                    "Upgrades.Reach.Level",
+                    ">",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "Upgrades.Reach.Level",
+                    "=",
+                    "4"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "z"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Panel"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Text"
+              ]
+            }
           ]
         }
       ],
@@ -49395,12 +51057,53 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Popup",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonObjectEffectTween",
+          "type": "ButtonStates::ButtonObjectEffectTween"
         },
         {
           "name": "Effect",
@@ -49456,7 +51159,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.39251611754882454,
+        "zoomFactor": 0.31119749424452253,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -49466,13 +51169,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 48,
-          "height": 15,
+          "height": 36,
           "layer": "",
           "name": "FirstMap",
           "persistentUuid": "06cadc71-f6bf-4a3d-b18b-2b7152eb725d",
-          "width": 17,
-          "x": 563,
-          "y": 243,
+          "width": 38,
+          "x": 722,
+          "y": 171,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -49482,13 +51185,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 48,
-          "height": 15,
+          "height": 35,
           "layer": "",
           "name": "SecondMap",
           "persistentUuid": "ee259e53-effb-4cc8-ae2e-1786b111e96f",
-          "width": 16,
-          "x": 552,
-          "y": 284,
+          "width": 38,
+          "x": 662,
+          "y": 211,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -49530,15 +51233,83 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 881,
+          "height": 1040,
           "keepRatio": true,
           "layer": "",
           "name": "Tectonic_Map",
           "persistentUuid": "3814bf6f-b410-47aa-86f4-7be379955882",
-          "width": 1455,
+          "width": 1753,
           "x": -41,
-          "y": -55,
+          "y": -165,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 237,
+          "keepRatio": true,
+          "layer": "Popup",
+          "name": "Popup_Panel",
+          "persistentUuid": "46f36653-654d-4f92-ada0-c5b550015234",
+          "width": 1522,
+          "x": 35,
+          "y": 460,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 156,
+          "keepRatio": true,
+          "layer": "Popup",
+          "name": "Popup_Text",
+          "persistentUuid": "c80b7819-bd59-47e8-bd74-cad20f003eac",
+          "width": 1437,
+          "x": 69,
+          "y": 512,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 248,
+          "keepRatio": true,
+          "layer": "Popup",
+          "name": "Mouseover_Panel",
+          "persistentUuid": "8c69aeec-0f7a-4af2-ad02-31f6879717d0",
+          "width": 230,
+          "x": 49,
+          "y": 22,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 170,
+          "keepRatio": true,
+          "layer": "Popup",
+          "name": "Mouseover_text",
+          "persistentUuid": "0ab0c047-ee99-4e8a-a3a8-46b9bcf53f33",
+          "width": 172,
+          "x": 63,
+          "y": 39,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -50007,6 +51778,184 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "Popup_Panel",
+          "rightMargin": 0,
+          "texture": "TextBox.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonObjectEffectTween",
+              "type": "ButtonStates::ButtonObjectEffectTween",
+              "ButtonFSM": "ButtonFSM",
+              "Effect": "Effect",
+              "EffectName": "Effect",
+              "EffectProperty": "",
+              "IdleValue": 0,
+              "FocusedValue": 0,
+              "PressedValue": 0,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "FadeInDuration": 0.125,
+              "FadeOutDuration": 0.5,
+              "PreviousState": "Idle",
+              "TweenInitialValue": 0,
+              "TweenTargetedValue": 0,
+              "TweenTime": 0,
+              "TweenState": "NoTween",
+              "EffectValue": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Popup_Text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "This is the World Map. Right now, you will only see one location available, but as you advance the cleanup efforts on Earth you will be able to access more locations.\nMouse over a location for info.\n\nPress Z to close this message.",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "This is the World Map. Right now, you will only see one location available, but as you advance the cleanup efforts on Earth you will be able to access more locations.\nMouse over a location for info.\n\nPress Z to close this message.",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "Mouseover_Panel",
+          "rightMargin": 0,
+          "texture": "TextBox.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonObjectEffectTween",
+              "type": "ButtonStates::ButtonObjectEffectTween",
+              "ButtonFSM": "ButtonFSM",
+              "Effect": "Effect",
+              "EffectName": "Effect",
+              "EffectProperty": "",
+              "IdleValue": 0,
+              "FocusedValue": 0,
+              "PressedValue": 0,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "FadeInDuration": 0.125,
+              "FadeOutDuration": 0.5,
+              "PreviousState": "Idle",
+              "TweenInitialValue": 0,
+              "TweenTargetedValue": 0,
+              "TweenTime": 0,
+              "TweenState": "NoTween",
+              "EffectValue": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Mouseover_text",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "",
+            "font": "",
+            "textAlignment": "left",
+            "characterSize": 20,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -50014,6 +51963,12 @@
         "children": [
           {
             "objectName": "World_Map"
+          },
+          {
+            "objectName": "Popup_Panel"
+          },
+          {
+            "objectName": "Mouseover_Panel"
           },
           {
             "objectName": "FirstMap"
@@ -50032,6 +51987,12 @@
           },
           {
             "objectName": "Tectonic_Map"
+          },
+          {
+            "objectName": "Popup_Text"
+          },
+          {
+            "objectName": "Mouseover_text"
           }
         ]
       },
@@ -50139,6 +52100,255 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "FirstMap",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Mouseover_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Mouseover_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Mouseover_text",
+                "Text",
+                "=",
+                "\"Continental Crust.\nHigh quantities of silica.\nScans show few precious metals.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "SecondMap",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Mouseover_Panel",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Mouseover_text",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Mouseover_text",
+                "Text",
+                "=",
+                "\"Convergent Plate Boundary.\nContinental and oceanic crusts.\nHistory of volcanic activity.\nScans show high heavy metal concentrations.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "FirstMap",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "SecondMap",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Mouseover_Panel"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Mouseover_text"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "z"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Panel"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Text"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-1-4\"]",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "SecondMap"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "Popups[\"Map-1-4\"]",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Popup_Text",
+                "Text",
+                "=",
+                "\"Now that you've collected some Alumina and Silica, let's go to the Factory and upgrade your drill.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Upgrades.Drill.Level",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Popup_Panel"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -50185,12 +52395,53 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Popup",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
+        },
+        {
+          "name": "ButtonObjectEffectTween",
+          "type": "ButtonStates::ButtonObjectEffectTween"
         },
         {
           "name": "Effect",
@@ -50219,6 +52470,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     }
